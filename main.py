@@ -17,9 +17,9 @@ dnhype_spot_portfolio = get_portfolio(address=dnhype_spot_eoa).filter(
 # Combine the two portfolios
 combined_portfolio = combine_portfolios([dnhype_short_portfolio, dnhype_spot_portfolio])
 
-logger.debug(f"Individual Short Portfolio:\n{dnhype_short_portfolio.tail()}")
-logger.debug(f"Individual Spot Portfolio:\n{dnhype_spot_portfolio.tail()}")
-logger.debug(f"Combined Portfolio:\n{combined_portfolio.tail()}")
+# logger.debug(f"Individual Short Portfolio:\n{dnhype_short_portfolio.tail()}")
+# logger.debug(f"Individual Spot Portfolio:\n{dnhype_spot_portfolio.tail()}")
+# logger.debug(f"Combined Portfolio:\n{combined_portfolio.tail()}")
 
 short_viz = visualize_portfolio(
     dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}"

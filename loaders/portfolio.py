@@ -5,7 +5,7 @@ import polars as pl
 import os
 import json
 from config import cache_dir
-from models.portfolio import portfolio_period_enum
+from models.portfolio import portfolio_schema
 
 
 def get_portfolio_json(address: str, use_cache: bool = True) -> dict:
@@ -59,12 +59,7 @@ def get_portfolio(address: str, use_cache: bool = True) -> pl.DataFrame:
                 }
             )
 
-    df_exploded = pl.DataFrame(rows).cast(
-        {
-            "timestamp": pl.Datetime("ms"),
-            "period": portfolio_period_enum,
-        }
-    )
+    df_exploded = pl.DataFrame(rows, schema_overrides=portfolio_schema)
     # logger.debug(f"Portfolio DataFrame:\n{df_exploded.tail()}")
     return df_exploded
 
