@@ -1,5 +1,6 @@
 from hyperliquid.info import Info
 from hyperliquid.utils import constants
+from loguru import logger
 import polars as pl
 import os
 import json
@@ -7,6 +8,17 @@ from config import cache_dir
 
 
 def get_portfolio_json(address: str, use_cache: bool = True) -> dict:
+    """
+    JSON contains periods:
+        - perpAllTime
+        - perpMonth
+        - perpDay
+        - week
+        - perpWeek
+        - allTime
+        - month
+        - day
+    """
 
     portfolio_dir = os.path.join(cache_dir, "portfolio")
     os.makedirs(portfolio_dir, exist_ok=True)
@@ -46,5 +58,10 @@ def get_portfolio(address: str, use_cache: bool = True) -> pl.DataFrame:
                 }
             )
 
-    df_exploded = pl.DataFrame(rows)
-    print(df_exploded)
+    df_exploded = pl.DataFrame(rows).cast(
+        {
+            "timestamp": pl.Datetime("ms"),
+        }
+    )
+    logger.debug(f"Portfolio DataFrame:\n{df_exploded.tail()}")
+    return df_exploded
