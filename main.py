@@ -1,5 +1,5 @@
 from loguru import logger
-from utils.portfolio import get_portfolio
+from utils.portfolio import get_portfolio, combine_portfolios
 import json
 import polars as pl
 
@@ -14,13 +14,20 @@ dnhype_short_portfolio = get_portfolio(address=dnhype_short_eoa).filter(
 dnhype_spot_portfolio = get_portfolio(address=dnhype_spot_eoa).filter(
     pl.col("period") == "allTime"
 )
-# print(json.dumps(p, indent=4))
+
+# Combine the two portfolios
+combined_portfolio = combine_portfolios([dnhype_short_portfolio, dnhype_spot_portfolio])
+
+logger.debug(f"Individual Short Portfolio:\n{dnhype_short_portfolio.tail()}")
+logger.debug(f"Individual Spot Portfolio:\n{dnhype_spot_portfolio.tail()}")
+logger.debug(f"Combined Portfolio:\n{combined_portfolio.tail()}")
 
 short_viz = visualize_portfolio(dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}")
 spot_viz = visualize_portfolio(dnhype_spot_portfolio, title=f"dnHYPE Spot Portfolio - {dnhype_spot_eoa}")
+combined_viz = visualize_portfolio(combined_portfolio, title="Combined dnHYPE Strategy Portfolio")
 
 viz = (
-    (spot_viz & short_viz)
+    (spot_viz & short_viz & combined_viz)
     # .resolve_scale(y="independent")
     .properties(title="DNHYPE Portfolio Overview")
 )

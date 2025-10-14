@@ -1,4 +1,4 @@
 cache_dir = "cache"
 
-chart_width = 600
-chart_height = 300
+chart_width = 400
+chart_height = 200

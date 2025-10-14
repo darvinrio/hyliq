@@ -2,22 +2,26 @@ import altair as alt
 import polars as pl
 from loguru import logger
 from config import chart_width, chart_height
+from models.portfolio import portfolio_period_enum, portfolio_schema
+
+
+def format_number(value):
+    """Format numbers into human-readable format with K, M, B abbreviations."""
+    if abs(value) >= 1e9:
+        return f"{value / 1e9:.1f}B"
+    elif abs(value) >= 1e6:
+        return f"{value / 1e6:.1f}M"
+    elif abs(value) >= 1e3:
+        return f"{value / 1e3:.1f}K"
+    else:
+        return f"{value:.0f}"
 
 
 def visualize_portfolio(df: pl.DataFrame, title:str = None) -> alt.Chart:
-    expected_portfolio_schema = pl.Schema(
-        {
-            "period": pl.String,
-            "timestamp": pl.Datetime("ms"),
-            "account_value": pl.Float64,
-            "pnl": pl.Float64,
-            "vlm": pl.Float64,
-        }
-    )
 
-    if df.schema != expected_portfolio_schema:
+    if df.schema != portfolio_schema:
         logger.error(
-            f"DataFrame schema does not match expected portfolio schema. \n received schema: {df.schema} \n expected schema: {expected_portfolio_schema}"
+            f"DataFrame schema does not match expected portfolio schema. \n received schema: {df.schema} \n expected schema: {portfolio_schema}"
         )
         raise ValueError("Invalid DataFrame schema")
 
@@ -38,7 +42,14 @@ def visualize_portfolio(df: pl.DataFrame, title:str = None) -> alt.Chart:
         .mark_line()
         .encode(
             x=alt.X("timestamp", title="Timestamp"),
-            y=alt.Y("value", title="Value (USD)"),
+            y=alt.Y(
+                "value", 
+                title="Value (USD)",
+                axis=alt.Axis(
+                    format="~s",  # SI prefix formatting (K, M, B)
+                    labelExpr="datum.value >= 1e9 ? format(datum.value / 1e9, '.1f') + 'B' : datum.value >= 1e6 ? format(datum.value / 1e6, '.1f') + 'M' : datum.value >= 1e3 ? format(datum.value / 1e3, '.1f') + 'K' : format(datum.value, '.0f')"
+                )
+            ),
             color=alt.Color(
                 "metric:N", 
                 title="Metrics",
@@ -47,7 +58,15 @@ def visualize_portfolio(df: pl.DataFrame, title:str = None) -> alt.Chart:
                     range=["blue", "orange"]
                 )
             ),
-            tooltip=["timestamp", "metric", "value"],
+            tooltip=[
+                "timestamp", 
+                "metric", 
+                alt.Tooltip(
+                    "value:Q", 
+                    title="Value (USD)",
+                    format="~s"
+                )
+            ],
         )
     ).properties(
         title=title if title else "Portfolio Overview",
