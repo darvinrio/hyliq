@@ -21,9 +21,15 @@ logger.debug(f"Individual Short Portfolio:\n{dnhype_short_portfolio.tail()}")
 logger.debug(f"Individual Spot Portfolio:\n{dnhype_spot_portfolio.tail()}")
 logger.debug(f"Combined Portfolio:\n{combined_portfolio.tail()}")
 
-short_viz = visualize_portfolio(dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}")
-spot_viz = visualize_portfolio(dnhype_spot_portfolio, title=f"dnHYPE Spot Portfolio - {dnhype_spot_eoa}")
-combined_viz = visualize_portfolio(combined_portfolio, title="Combined dnHYPE Strategy Portfolio")
+short_viz = visualize_portfolio(
+    dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}"
+)
+spot_viz = visualize_portfolio(
+    dnhype_spot_portfolio, title=f"dnHYPE Spot Portfolio - {dnhype_spot_eoa}"
+)
+combined_viz = visualize_portfolio(
+    combined_portfolio, title="Combined dnHYPE Strategy Portfolio"
+)
 
 viz = (
     (spot_viz & short_viz & combined_viz)

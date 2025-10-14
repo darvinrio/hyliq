@@ -1,4 +1,3 @@
-
 def format_number(value):
     """Format numbers into human-readable format with K, M, B abbreviations."""
     if abs(value) >= 1e9:
