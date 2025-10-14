@@ -3,19 +3,7 @@ import polars as pl
 from loguru import logger
 from config import chart_width, chart_height
 from models.portfolio import portfolio_period_enum, portfolio_schema
-
-
-def format_number(value):
-    """Format numbers into human-readable format with K, M, B abbreviations."""
-    if abs(value) >= 1e9:
-        return f"{value / 1e9:.1f}B"
-    elif abs(value) >= 1e6:
-        return f"{value / 1e6:.1f}M"
-    elif abs(value) >= 1e3:
-        return f"{value / 1e3:.1f}K"
-    else:
-        return f"{value:.0f}"
-
+from utils.num import format_number
 
 def visualize_portfolio(df: pl.DataFrame, title:str = None) -> alt.Chart:
 

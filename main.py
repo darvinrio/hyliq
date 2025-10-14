@@ -1,6 +1,5 @@
 from loguru import logger
-from utils.portfolio import get_portfolio, combine_portfolios
-import json
+from loaders.portfolio import get_portfolio, combine_portfolios
 import polars as pl
 
 from viz.portfolio import visualize_portfolio
