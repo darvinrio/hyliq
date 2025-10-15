@@ -25,13 +25,13 @@ def plot_dnhype():
     # logger.debug(f"Combined Portfolio:\n{combined_portfolio.tail()}")
 
     short_viz = visualize_portfolio(
-        dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}"
+        dnhype_short_portfolio, title=f"dnHYPE Short Portfolio - {dnhype_short_eoa}", show_account_value=False
     )
     spot_viz = visualize_portfolio(
-        dnhype_spot_portfolio, title=f"dnHYPE Spot Portfolio - {dnhype_spot_eoa}"
+        dnhype_spot_portfolio, title=f"dnHYPE Spot Portfolio - {dnhype_spot_eoa}", show_account_value=False
     )
     combined_viz = visualize_portfolio(
-        combined_portfolio, title="Combined dnHYPE Strategy Portfolio"
+        combined_portfolio, title="Combined dnHYPE Strategy Portfolio", show_account_value=False
     )
 
     viz = (
