@@ -24,20 +24,20 @@ for eoa in eoas:
     label = eoa["label"]
     logger.info(f"Processing {label} - {addr}")
     filename_uid = f"{label.replace(' ','_').lower()}"
-    
+
     twap_df = get_twap_history_dataframe(addr)
     twap_df.write_csv(f"debug/{filename_uid}_twap.csv")
-    
+
     fills_df = get_user_fills_dataframe(addr)
     fills_df.write_csv(f"debug/{filename_uid}_fills.csv")
-    
+
     funding_df = get_user_funding_dataframe(addr)
     funding_df.write_csv(f"debug/{filename_uid}_funding.csv")
-    
+
     ledger_updates_df = get_user_ledger_updates_dataframe(addr)
     ledger_updates_df.write_csv(f"debug/{filename_uid}_ledger_updates.csv")
-    
-    
+
+
 # plot_dnhype()
 
 # hist_df, latest_df = generate_positions(dnhype_short_eoa)

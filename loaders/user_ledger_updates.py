@@ -22,7 +22,9 @@ def get_user_ledger_updates_json(address: str, use_cache: bool = True) -> list:
     ledger_updates_dir = os.path.join(cache_dir, "user_ledger_updates")
     os.makedirs(ledger_updates_dir, exist_ok=True)
 
-    cache_path = os.path.join(ledger_updates_dir, f"{address.lower()}_ledger_updates.json")
+    cache_path = os.path.join(
+        ledger_updates_dir, f"{address.lower()}_ledger_updates.json"
+    )
 
     if os.path.isfile(cache_path) and use_cache:
         with open(cache_path, "r") as f:
@@ -52,7 +54,9 @@ def get_user_ledger_updates_json(address: str, use_cache: bool = True) -> list:
             raise
 
 
-def get_user_ledger_updates_dataframe(address: str, use_cache: bool = True) -> pl.DataFrame:
+def get_user_ledger_updates_dataframe(
+    address: str, use_cache: bool = True
+) -> pl.DataFrame:
     """
     Load user non-funding ledger updates into a Polars DataFrame.
 
@@ -81,14 +85,30 @@ def get_user_ledger_updates_dataframe(address: str, use_cache: bool = True) -> p
             "hash": update.get("hash", ""),
             "delta_type": delta.get("type", ""),
             # Common fields
-            "usdc": float(delta.get("usdc", 0.0)) if delta.get("usdc") is not None else None,
+            "usdc": (
+                float(delta.get("usdc", 0.0)) if delta.get("usdc") is not None else None
+            ),
             "token": delta.get("token", ""),
-            "amount": float(delta.get("amount", 0.0)) if delta.get("amount") is not None else None,
-            "usdcValue": float(delta.get("usdcValue", 0.0)) if delta.get("usdcValue") is not None else None,
+            "amount": (
+                float(delta.get("amount", 0.0))
+                if delta.get("amount") is not None
+                else None
+            ),
+            "usdcValue": (
+                float(delta.get("usdcValue", 0.0))
+                if delta.get("usdcValue") is not None
+                else None
+            ),
             "user": delta.get("user", ""),
             "destination": delta.get("destination", ""),
-            "fee": float(delta.get("fee", 0.0)) if delta.get("fee") is not None else None,
-            "nativeTokenFee": float(delta.get("nativeTokenFee", 0.0)) if delta.get("nativeTokenFee") is not None else None,
+            "fee": (
+                float(delta.get("fee", 0.0)) if delta.get("fee") is not None else None
+            ),
+            "nativeTokenFee": (
+                float(delta.get("nativeTokenFee", 0.0))
+                if delta.get("nativeTokenFee") is not None
+                else None
+            ),
             "nonce": delta.get("nonce", None),
             "feeToken": delta.get("feeToken", ""),
             # Specific fields
