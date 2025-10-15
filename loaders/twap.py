@@ -78,7 +78,7 @@ def get_twap_history_dataframe(address: str, use_cache: bool = True) -> pl.DataF
 
         rows.append(
             {
-                "time": int(entry["time"]),
+                "time": int(entry["time"])*1000,
                 "coin": state.get("coin", ""),
                 "user": state.get("user", ""),
                 "side": state.get("side", ""),
