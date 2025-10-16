@@ -5,7 +5,7 @@ import polars as pl
 import os
 import json
 from config import cache_dir
-from models.portfolio import portfolio_schema
+from models.df_models.portfolio import portfolio_schema
 
 
 def get_portfolio_json(address: str, use_cache: bool = True) -> dict:

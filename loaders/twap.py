@@ -4,7 +4,7 @@ import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
-from models.twap import twap_schema
+from models.df_models.twap import twap_schema
 
 
 def get_twap_history_json(address: str, use_cache: bool = True) -> list:

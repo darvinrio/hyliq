@@ -4,7 +4,7 @@ import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
-from models.user_fills import user_fills_schema
+from models.df_models.user_fills import user_fills_schema
 
 
 def get_user_fills_json(

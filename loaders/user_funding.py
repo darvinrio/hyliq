@@ -4,7 +4,7 @@ import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
-from models.user_funding import user_funding_schema
+from models.df_models.user_funding import user_funding_schema
 
 
 def get_user_funding_json(address: str, use_cache: bool = True) -> list:

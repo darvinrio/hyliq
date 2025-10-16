@@ -4,7 +4,7 @@ import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
-from models.user_ledger_updates import user_ledger_updates_schema
+from models.df_models.user_ledger_updates import user_ledger_updates_schema
 
 
 def get_user_ledger_updates_json(address: str, use_cache: bool = True) -> list:

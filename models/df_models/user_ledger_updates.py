@@ -1,12 +1,21 @@
 import polars as pl
 
+delta_type_enum = pl.Enum([
+    "accountClassTransfer",
+    "spotTransfer",
+    "cStakingTransfer",
+    "withdraw",
+    "internalTransfer",
+    "deposit",
+    "accountActivationGas"
+])
 # Schema for user non-funding ledger updates data
 # This schema accommodates all the different delta types in the ledger updates
 user_ledger_updates_schema = pl.Schema(
     {
         "time": pl.Datetime("ms"),
         "hash": pl.String,
-        "delta_type": pl.String,
+        "delta_type": delta_type_enum,
         # Common fields across most delta types
         "usdc": pl.Float64,
         "token": pl.String,

@@ -4,7 +4,7 @@ import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
-from models.explorer import user_details_schema
+from models.df_models.explorer import user_details_schema
 
 # Global list of transaction types to filter out
 FILTERED_TX_TYPES = ["evmRawTx"]

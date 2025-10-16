@@ -3,7 +3,7 @@ import polars as pl
 import os
 from config import cache_dir
 from cchecksum import to_checksum_address
-from models.actions import actions_schema
+from models.df_models.actions import actions_schema
 
 
 def get_actions(address: str, use_cache: bool = True) -> pl.DataFrame:
