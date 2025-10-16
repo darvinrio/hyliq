@@ -139,7 +139,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
     else:
         logger.error(f"Unknown ledger update type: {type} in transaction {ledger_entry.hash}")
     
-    new_state = state.deepcopy()
+    new_state = state.model_copy(deep=True)
     for update in state_updates:
         new_state = state_update(new_state, update)
         

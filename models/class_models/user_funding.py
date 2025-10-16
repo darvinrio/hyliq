@@ -17,6 +17,7 @@ class UserFundingModel(BaseModel):
         rate (float): The funding rate applied.
     """
 
+    name: str = "UserFunding"
     time: int = Field(..., description="Timestamp in milliseconds")
     hash: str = Field(..., description="Transaction hash")
     delta_type: str = Field(..., description="Type of funding delta")

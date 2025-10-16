@@ -29,6 +29,7 @@ class TWAPModel(BaseModel):
         twapId (int | None): The TWAP order ID, if applicable.
     """
 
+    name: str = "TWAP"
     time: int = Field(..., description="Timestamp in milliseconds")
     coin: str = Field(..., description="Coin symbol")
     user: str = Field(..., description="User address")

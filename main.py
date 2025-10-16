@@ -8,8 +8,13 @@ from loaders.twap import get_twap_history_pydantic
 from loaders.user_fills import get_user_fills_pydantic
 from loaders.user_funding import get_user_funding_pydantic
 from loaders.user_ledger_updates import get_user_ledger_updates_pydantic
+from models.class_models.twap import TWAPModel
+from models.class_models.user_fills import UserFillsModel
+from models.class_models.user_ledger_updates import TxModel
 from transformer.state import init_state
+from transformer.user_fills import user_fill_state_update
 from transformer.user_ledger_updates import user_ledger_update
+from transformer.twap import twap_state_update
 
 dnhype_short_eoa = "0x1Da7920cA7f9ee28D481BC439dccfED09F52a237"
 dnhype_spot_eoa = "0xca36897cd0783a558f46407cd663d0f46d2f3386"
@@ -35,7 +40,27 @@ for eoa in eoas:
     # print(user_funding)
     # print(user_ledger_updates)
     
+    updates = [
+        *twaps,
+        # *user_funding,
+        *user_fills,
+        *user_ledger_updates
+    ]
+    
+    updates = sorted(updates, key=lambda x: x.time)
     initial_state = init_state(addr, 0)
-    for update in user_ledger_updates:
-        new_state = user_ledger_update(initial_state, update)
-        print(new_state.spot_usdc, new_state.perp_usdc)
+    new_state = initial_state.model_copy(deep=True)
+    for update in updates:
+        if isinstance(update, TxModel):
+            new_state = user_ledger_update(new_state, update)
+        elif isinstance(update, TWAPModel):
+            new_state = twap_state_update(new_state, update)
+        elif isinstance(update, UserFillsModel):
+            new_state = user_fill_state_update(new_state, update)
+        else:
+            logger.error(f"Unknown update type: {type(update)}")
+            continue
+        
+        # logger.info(f"Processed update at {update.time} - New state: {new_state}")
+        logger.debug(f"Processed {update.name} update at {update.time}")
+        logger.debug(f"Spot Balances: {new_state.spot_positions}")

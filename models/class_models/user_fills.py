@@ -33,6 +33,7 @@ class UserFillsModel(BaseModel):
         orderId (int | None): The ID of the order associated with the fill, if available.
     """
 
+    name: str = "UserFill"
     coin: str = Field(..., description="Coin symbol")
     px: float = Field(..., description="Price at which the order was filled")
     sz: float = Field(..., description="Order size")

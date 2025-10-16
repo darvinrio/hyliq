@@ -2,7 +2,7 @@ from models.class_models.twap import TWAPModel
 from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
 
-def user_fill(state: StateModel, twap: TWAPModel) -> StateModel:
+def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
     if twap.status == "activated":
         return state
     
@@ -30,7 +30,7 @@ def user_fill(state: StateModel, twap: TWAPModel) -> StateModel:
         )
     ]
     
-    new_state = state.deepcopy()
+    new_state = state.model_copy(deep=True)
     for update in state_updates:
         new_state = state_update(new_state, update)
         

@@ -2,7 +2,7 @@ from models.class_models.user_fills import UserFillsModel
 from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
 
-def user_fill(state: StateModel, fill: UserFillsModel) -> StateModel:
+def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateModel:
     time = fill.datetime
     side = fill.side
     sz = fill.sz if side == "b" else -fill.sz
@@ -27,7 +27,7 @@ def user_fill(state: StateModel, fill: UserFillsModel) -> StateModel:
         )
     ]
     
-    new_state = state.deepcopy()
+    new_state = state.model_copy(deep=True)
     for update in state_updates:
         new_state = state_update(new_state, update)
         

@@ -1,7 +1,7 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, computed_field
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
-from typing import Union
+from typing import Literal, Union
 
 
 class DepositTxModel(BaseModel):
@@ -91,6 +91,9 @@ LedgerUpdates = Union[
 
 
 class TxModel(BaseModel):
+    """
+    User Ledger Update Model
+    """
     time: int = Field(..., description="Timestamp in milliseconds")
     hash: str = Field(..., description="Transaction hash")
     delta: LedgerUpdates = Field(..., description="Ledger update details")
@@ -98,3 +101,8 @@ class TxModel(BaseModel):
     @property
     def datetime(self):
         return datetime.fromtimestamp(self.time / 1000, tz=timezone.utc)
+    
+    @computed_field
+    @property
+    def name(self) -> str:
+        return self.delta.type + "Tx"
