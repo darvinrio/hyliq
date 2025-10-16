@@ -62,6 +62,7 @@ class SpotTransferTxModel(BaseModel):
     destination: str = Field(..., description="Destination user address")
     fee: float = Field(..., description="Transfer fee")
     nativeTokenFee: float = Field(..., description="Native token fee for the transfer")
+    feeToken: str | None = Field(None, description="Token used to pay the fee")
 
 
 class CStakingTransferTxModel(BaseModel):
