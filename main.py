@@ -66,13 +66,10 @@ for eoa in eoas:
             logger.error(f"Error processing {update.name} update at {update.time} - {e}")
             continue
         
-        # logger.info(f"Processed update at {update.time} - New state: {new_state}")
-        # logger.debug(f"Processed {update.name} update at {update.time}")
-        # logger.debug(f"Spot Balances: {new_state.spot_positions}")
-        
         # print(f"Processed update at {update.time} - New state: {new_state}")
         print(f"Processed {update.name} update at {update.time}")
-        print(f"Spot Balances: {new_state.spot_positions}")
+        # print(f"Spot Balances: {new_state.spot_positions}")
+        print(f"spot_usdc:{new_state.spot_usdc}, perp_usdc:{new_state.perp_usdc}")
         print()
         
-    # logger.success(f"Final state for {label}: {new_state}")
+    logger.success(f"Final state for {label}: {new_state}")
