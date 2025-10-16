@@ -217,6 +217,7 @@ def get_user_ledger_updates_pydantic(
                 models.append(model)
 
             elif type == "spotTransfer":
+                feeToken = delta.get("feeToken")
                 model = TxModel(
                     time=time,
                     hash=hash,
@@ -229,6 +230,7 @@ def get_user_ledger_updates_pydantic(
                         destination=delta.get("destination"),
                         fee=float(delta.get("fee", 0.0)),
                         nativeTokenFee=float(delta.get("nativeTokenFee", 0.0)),
+                        feeToken = feeToken if feeToken else None
                     ),
                 )
 
