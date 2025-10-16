@@ -1,16 +1,30 @@
+from enum import Enum
 from pydantic import BaseModel, Field
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
 
-
+class TwapStatus(str, Enum):
+    f = "finished"
+    a = "activated"
+    
 class TWAPModel(BaseModel):
     """
     Time-Weighted Average Price (TWAP) Model
-
+    
     Attributes:
-        interval (int): The time interval in seconds over which to calculate the TWAP.
-        start_time (str): The start time for the TWAP calculation in ISO 8601 format.
-        end_time (str): The end time for the TWAP calculation in ISO 8601 format.
+        time (int): The timestamp of the TWAP order in milliseconds.
+        coin (str): The coin symbol.
+        user (str): The user address.
+        side (str): The order side: 'b' for buy, 'a' for sell.
+        sz (float): The total order size.
+        executedSz (float): The executed size of the order.
+        executedNtl (float): The executed notional value.
+        minutes (int): The duration of the TWAP order in minutes.
+        reduceOnly (bool): Whether the order is reduce-only.
+        randomize (bool): Whether the order is randomized.
+        timestamp (int): The order timestamp.
+        status (str): The status of the TWAP order.
+        twapId (int | None): The TWAP order ID, if applicable.
     """
 
     time: int = Field(..., description="Timestamp in milliseconds")
@@ -24,7 +38,7 @@ class TWAPModel(BaseModel):
     reduceOnly: bool = Field(..., description="Whether the order is reduce-only")
     randomize: bool = Field(..., description="Whether the order is randomized")
     timestamp: int = Field(..., description="Order timestamp")
-    status: str = Field(..., description="Order status")
+    status: TwapStatus = Field(..., description="Order status")
     twapId: int | None = Field(None, description="TWAP order ID")
 
     @property

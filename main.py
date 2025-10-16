@@ -3,7 +3,6 @@ import polars as pl
 
 from config import REFRESH
 
-from loaders import user_fills
 from loaders.twap import get_twap_history_pydantic
 from loaders.user_fills import get_user_fills_pydantic
 from loaders.user_funding import get_user_funding_pydantic
