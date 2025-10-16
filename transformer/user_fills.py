@@ -12,7 +12,7 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
     token = fill.coin if fill.coin[0] != "@" else coin_id_map.get(fill.coin, fill.coin)
     delta = sz
     ntl = sz * fill.px if side == "b" else -sz * fill.px
-    usdc_ntl = sz * fill.px
+    usdc_ntl = ntl if not is_perp else -ntl
     
     state_updates = [
         StateUpdateModel(
@@ -25,7 +25,7 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
             time=int(time.timestamp() * 1000),
             token="USDC",
             is_perp=is_perp,
-            delta= -ntl
+            delta= usdc_ntl
         )
     ]
     # print(state_updates)
