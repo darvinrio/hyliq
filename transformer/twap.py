@@ -6,7 +6,7 @@ def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
     if twap.status == "activated":
         return state
     
-    time = TWAPModel.datetime
+    time = twap.time
     side = twap.side
     sz = twap.sz if side == "b" else -twap.sz
     token = twap.coin
@@ -17,13 +17,13 @@ def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
     
     state_updates = [
         StateUpdateModel(
-            time=int(time.timestamp() * 1000),
+            time=int(time * 1000),
             token=token,
             is_perp=is_perp,
             delta=delta
         ),
         StateUpdateModel(
-            time=int(time.timestamp() * 1000),
+            time=int(time * 1000),
             token="USDC",
             is_perp=is_perp,
             delta= usdc_ntl
