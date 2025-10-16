@@ -6,6 +6,8 @@ from models.class_models.common import OrderSide
 class TwapStatus(str, Enum):
     f = "finished"
     a = "activated"
+    t = "terminated"
+    e = "error"
     
 class TWAPModel(BaseModel):
     """

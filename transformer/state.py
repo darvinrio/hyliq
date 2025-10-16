@@ -1,7 +1,7 @@
-from models.class_models.state import PerpPosition, SpotPosition, State, StateUpdate
+from models.class_models.state import PerpPositionModel, SpotPositionModel, StateModel, StateUpdateModel
 
-def init_state(user: str, time: int) -> State:
-    return State(
+def init_state(user: str, time: int) -> StateModel:
+    return StateModel(
         user=user,
         time=time,
         spot_usdc=0.0,
@@ -10,7 +10,7 @@ def init_state(user: str, time: int) -> State:
         perp_positions={}
     )
 
-def state_update(state: State, update: StateUpdate) -> State:
+def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
     new_spot_positions = state.spot_positions.copy()
     new_perp_positions = state.perp_positions.copy()
     new_spot_usdc = state.spot_usdc
@@ -25,14 +25,14 @@ def state_update(state: State, update: StateUpdate) -> State:
         if update.is_perp:
             if update.token in state.perp_positions:
                 old_pos = state.perp_positions[update.token]
-                new_perp_positions[update.token] = PerpPosition(
+                new_perp_positions[update.token] = PerpPositionModel(
                     token=old_pos.token,
                     size=old_pos.size + update.delta,
                     entry_price=old_pos.entry_price,
                     usdc_value=old_pos.usdc_value
                 )
             else:
-                new_perp_positions[update.token] = PerpPosition(
+                new_perp_positions[update.token] = PerpPositionModel(
                     token=update.token,
                     size=update.delta,
                     entry_price=0.0,
@@ -42,19 +42,19 @@ def state_update(state: State, update: StateUpdate) -> State:
             if update.token in state.spot_positions:
                 old_pos = state.spot_positions[update.token]
                 # Create NEW position object with updated values
-                new_spot_positions[update.token] = SpotPosition(
+                new_spot_positions[update.token] = SpotPositionModel(
                     token=old_pos.token,
                     balance=old_pos.balance + update.delta,
                     usdc_value=old_pos.usdc_value
                 )
             else:
-                new_spot_positions[update.token] = SpotPosition(
+                new_spot_positions[update.token] = SpotPositionModel(
                     token=update.token,
                     balance=update.delta,
                     usdc_value=0.0
                 )
     
-    return State(
+    return StateModel(
         user=state.user,
         time=update.time,
         spot_usdc=new_spot_usdc,

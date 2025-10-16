@@ -120,7 +120,7 @@ def get_user_funding_pydantic(
     for funding in user_funding:
         try:
             delta = funding.get("delta")
-            print(delta.get("nSamples"))
+            # print(delta.get("nSamples"))
             model = UserFundingModel(
                 time=int(funding.get("time")),
                 hash=funding.get("hash"),

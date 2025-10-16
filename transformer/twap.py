@@ -1,5 +1,5 @@
 from models.class_models.twap import TWAPModel
-from models.class_models.state import StateModel, StateUpdate
+from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
 
 def user_fill(state: StateModel, twap: TWAPModel) -> StateModel:
@@ -16,13 +16,13 @@ def user_fill(state: StateModel, twap: TWAPModel) -> StateModel:
     usdc_ntl =  twap.executedNtl
     
     state_updates = [
-        StateUpdate(
+        StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token=token,
             is_perp=is_perp,
             delta=delta
         ),
-        StateUpdate(
+        StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
             is_perp=is_perp,

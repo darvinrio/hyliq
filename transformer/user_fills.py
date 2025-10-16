@@ -1,5 +1,5 @@
 from models.class_models.user_fills import UserFillsModel
-from models.class_models.state import StateModel, StateUpdate
+from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
 
 def user_fill(state: StateModel, fill: UserFillsModel) -> StateModel:
@@ -13,13 +13,13 @@ def user_fill(state: StateModel, fill: UserFillsModel) -> StateModel:
     usdc_ntl = sz * fill.price
     
     state_updates = [
-        StateUpdate(
+        StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token=token,
             is_perp=is_perp,
             delta=delta
         ),
-        StateUpdate(
+        StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
             is_perp=is_perp,
