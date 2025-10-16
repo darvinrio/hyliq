@@ -2,7 +2,7 @@ import altair as alt
 import polars as pl
 from loguru import logger
 from config import chart_width, chart_height
-from models.portfolio import portfolio_period_enum, portfolio_schema
+from models.df_models.portfolio import portfolio_period_enum, portfolio_schema
 from utils.num import format_number
 
 
