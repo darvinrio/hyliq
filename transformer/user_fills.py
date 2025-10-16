@@ -15,7 +15,8 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
     
     usdc_ntl = 0
     if is_perp:
-        usdc_ntl = -(sz * fill.px)
+        leverage = state.perp_positions.get(token).leverage
+        usdc_ntl = -(sz * fill.px)/leverage
     else:
         usdc_ntl = (sz * fill.px) if side == "b" else -(sz * fill.px)
     

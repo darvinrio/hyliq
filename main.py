@@ -1,16 +1,20 @@
 from hmac import new
+from turtle import up
 from loguru import logger
 import polars as pl
 
 from config import REFRESH
 
+from loaders.explorer import get_user_explorer_pydantic
 from loaders.twap import get_twap_history_pydantic
 from loaders.user_fills import get_user_fills_pydantic
 from loaders.user_funding import get_user_funding_pydantic
 from loaders.user_ledger_updates import get_user_ledger_updates_pydantic
+from models.class_models.explorer import UpdateLeverageModel
 from models.class_models.twap import TWAPModel
 from models.class_models.user_fills import UserFillsModel
 from models.class_models.user_ledger_updates import TxModel
+from transformer.explorer import user_leverage_update
 from transformer.state import init_state
 from transformer.user_fills import user_fill_state_update
 from transformer.user_ledger_updates import user_ledger_update
@@ -35,6 +39,7 @@ for eoa in eoas:
     user_fills = get_user_fills_pydantic(addr, use_cache=not REFRESH)
     user_funding = get_user_funding_pydantic(addr, use_cache=not REFRESH)
     user_ledger_updates = get_user_ledger_updates_pydantic(addr, use_cache=not REFRESH)
+    leverage_updates = get_user_explorer_pydantic(addr, use_cache=not REFRESH)
 
     # print(twaps)
     # print(user_fills)
@@ -45,7 +50,8 @@ for eoa in eoas:
         *twaps,
         # *user_funding,
         *user_fills,
-        *user_ledger_updates
+        *user_ledger_updates,
+        *leverage_updates
     ]
     
     updates = sorted(updates, key=lambda x: x.time)
@@ -59,6 +65,8 @@ for eoa in eoas:
             new_state = twap_state_update(new_state, update)
         elif isinstance(update, UserFillsModel):
             new_state = user_fill_state_update(new_state, update)
+        elif isinstance(update, UpdateLeverageModel):
+            new_state = user_leverage_update(new_state, update)
         else:
             logger.error(f"Unknown update type: {type(update)}")
             continue

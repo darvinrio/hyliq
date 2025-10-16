@@ -1,16 +1,18 @@
+from typing import List
 import requests
 import json
 import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
+from models.class_models.explorer import UpdateLeverageModel
 from models.df_models.explorer import user_details_schema
 
 # Global list of transaction types to filter out
 FILTERED_TX_TYPES = ["evmRawTx"]
 
 
-def get_user_details_json(
+def get_user_explorer_json(
     address: str, use_cache: bool = True, filtered: bool = True
 ) -> dict:
     """
@@ -25,7 +27,7 @@ def get_user_details_json(
         Dictionary containing user details from the API
     """
 
-    user_details_dir = os.path.join(cache_dir, "user_details")
+    user_details_dir = os.path.join(cache_dir, "user_explorer")
     os.makedirs(user_details_dir, exist_ok=True)
 
     # Use different cache files for raw and filtered data
@@ -84,7 +86,7 @@ def get_user_details_json(
             raise
 
 
-def get_user_details_dataframe(address: str, use_cache: bool = True) -> pl.DataFrame:
+def get_user_explorer_dataframe(address: str, use_cache: bool = True) -> pl.DataFrame:
     """
     Load user details into a Polars DataFrame.
 
@@ -97,7 +99,7 @@ def get_user_details_dataframe(address: str, use_cache: bool = True) -> pl.DataF
     """
 
     # Use filtered data by default (comment out filtered=True to use raw data)
-    user_details = get_user_details_json(address, use_cache, filtered=True)
+    user_details = get_user_explorer_json(address, use_cache, filtered=True)
     # user_details = get_user_details_json(address, use_cache, filtered=False)  # Uncomment for raw data
 
     # Extract transactions from the response
@@ -129,3 +131,60 @@ def get_user_details_dataframe(address: str, use_cache: bool = True) -> pl.DataF
     df = pl.DataFrame(rows, schema_overrides=user_details_schema)
     logger.debug(f"User details DataFrame shape: {df.shape}")
     return df
+
+def get_user_explorer_pydantic(
+    address: str, use_cache: bool = True
+)-> List[UpdateLeverageModel]:
+    """
+    Load user details into a list of Pydantic models.
+    Currently only supports UpdateLeverageModel.
+
+    Args:
+        address: User address to fetch details for
+        use_cache: Whether to use cached data if available
+
+    Returns:
+        List of UpdateLeverageModel instances containing user transaction details
+    """
+    
+    # Use filtered data by default (comment out filtered=True to use raw data)
+    user_details = get_user_explorer_json(address, use_cache, filtered=True)
+    # user_details = get_user_details_json(address, use_cache, filtered=False)  # Uncomment for raw data
+
+    # Extract transactions from the response
+    txs = user_details.get("txs", [])
+
+    if not txs:
+        logger.warning(f"No transactions found for address {address}")
+        return []
+
+    models: List[UpdateLeverageModel] = []
+    for tx in txs:
+        try:
+            time = int(tx["time"])
+            user = tx["user"]
+            block = int(tx["block"])
+            hash = tx["hash"]
+            error = tx["error"] if tx["error"] is not None else None
+
+            action = tx.get("action", {})
+            action_type = action.get("type", "")
+
+            if action_type == "updateLeverage":
+                model = UpdateLeverageModel(
+                    time=time,
+                    user=user,
+                    asset=int(action.get("asset")),
+                    isCross=bool(action.get("isCross")),
+                    leverage=float(action.get("leverage")),
+                    block=block,
+                    hash=hash,
+                    error=error,
+                )
+                models.append(model)
+
+        except Exception as e:
+            logger.error(f"Failed to parse transaction {tx}: {e}")
+            continue
+
+    return models

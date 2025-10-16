@@ -17,6 +17,7 @@ class PerpPositionModel(BaseModel):
     
     token: str = Field(..., description="The token symbol of the perp position.")
     size: float = Field(..., description="The size of the perp position.")
+    leverage: float = Field(10, description="The leverage of the perp position.")
     entry_price: float = Field(..., description="The entry price of the perp position.")
     usdc_value: float = Field(..., description="The USDC value of the perp position.")
 
