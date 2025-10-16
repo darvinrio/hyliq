@@ -12,8 +12,14 @@ def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
     token = twap.coin
     is_perp = False if token[0] == "@" else True
     delta = twap.executedSz if side == "b" else -twap.executedSz
-    ntl = twap.executedNtl if side == "b" else -twap.executedNtl
-    usdc_ntl =  twap.executedNtl
+    # ntl = twap.executedNtl if side == "b" else -twap.executedNtl
+    # usdc_ntl =  ntl if not is_perp else -ntl
+    
+    usdc_ntl = 0
+    if is_perp:
+        usdc_ntl = -twap.executedNtl
+    else:
+        usdc_ntl = twap.executedNtl if side == "b" else -twap.executedNtl
     
     state_updates = [
         StateUpdateModel(

@@ -15,6 +15,7 @@ from transformer.state import init_state
 from transformer.user_fills import user_fill_state_update
 from transformer.user_ledger_updates import user_ledger_update
 from transformer.twap import twap_state_update
+from datetime import datetime
 
 dnhype_short_eoa = "0x1Da7920cA7f9ee28D481BC439dccfED09F52a237"
 dnhype_spot_eoa = "0xca36897cd0783a558f46407cd663d0f46d2f3386"
@@ -51,25 +52,28 @@ for eoa in eoas:
     initial_state = init_state(addr.lower(), 0)
     new_state = initial_state.model_copy(deep=True)
     for update in updates:
-        try:
-            if isinstance(update, TxModel):
-                new_state = user_ledger_update(new_state, update)
-            elif isinstance(update, TWAPModel):
-                new_state = twap_state_update(new_state, update)
-            elif isinstance(update, UserFillsModel):
-                new_state = user_fill_state_update(new_state, update)
-            else:
-                logger.error(f"Unknown update type: {type(update)}")
-                continue
-            
-        except Exception as e:
-            logger.error(f"Error processing {update.name} update at {update.time} - {e}")
+        # try:
+        if isinstance(update, TxModel):
+            new_state = user_ledger_update(new_state, update)
+        elif isinstance(update, TWAPModel):
+            new_state = twap_state_update(new_state, update)
+        elif isinstance(update, UserFillsModel):
+            new_state = user_fill_state_update(new_state, update)
+        else:
+            logger.error(f"Unknown update type: {type(update)}")
             continue
+            
+        # except Exception as e:
+        #     logger.error(f"Error processing {update.name} update at {update.time} - {e}")
+        #     continue
         
         # print(f"Processed update at {update.time} - New state: {new_state}")
-        print(f"Processed {update.name} update at {update.time}")
+        # if update.name != "UserFill":
+        dt = datetime.fromtimestamp(update.time/1000)
+        print(f"Processed {update.name} update at {update.time} - {dt}")
         # print(f"Spot Balances: {new_state.spot_positions}")
         print(f"spot_usdc:{new_state.spot_usdc}, perp_usdc:{new_state.perp_usdc}")
+        # print(new_state)
         print()
         
     logger.success(f"Final state for {label}: {new_state}")

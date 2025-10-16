@@ -109,14 +109,16 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
             )
             state_updates.append(new_state_update)
         # fee
-        fee_drop = StateUpdateModel(
-            time=int(time.timestamp() * 1000),
-            token=delta_token,
-            is_perp=False,
-            delta=-ledger_entry.delta.fee
-        )
-        state_updates.append(fee_drop)
-        # if ledger_entry.delta.FEE
+        if ledger_entry.delta.feeToken:
+            fee_token = ledger_entry.delta.feeToken
+            fee_token = fee_token if fee_token[0] != "@" else coin_id_map.get(fee_token, fee_token)
+            fee_drop = StateUpdateModel(
+                time=int(time.timestamp() * 1000),
+                token=fee_token,
+                is_perp=False,
+                delta=-ledger_entry.delta.fee
+            )
+            state_updates.append(fee_drop)
     
     elif type == "cStakingTransfer":
         delta_token = ledger_entry.delta.token 

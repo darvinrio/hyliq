@@ -1,4 +1,3 @@
-from turtle import st
 from models.class_models.user_fills import UserFillsModel
 from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
@@ -11,8 +10,14 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
     is_perp = True if fill.dir in ["Open Long", "Open Short", "Close Long", "Close Short" , "Auto-Deleveraging"] else False
     token = fill.coin if fill.coin[0] != "@" else coin_id_map.get(fill.coin, fill.coin)
     delta = sz
-    ntl = sz * fill.px if side == "b" else -sz * fill.px
-    usdc_ntl = ntl if not is_perp else -ntl
+    # ntl = sz * fill.px if side == "b" else -sz * fill.px
+    # usdc_ntl = ntl if not is_perp else -ntl
+    
+    usdc_ntl = 0
+    if is_perp:
+        usdc_ntl = -(sz * fill.px)
+    else:
+        usdc_ntl = (sz * fill.px) if side == "b" else -(sz * fill.px)
     
     state_updates = [
         StateUpdateModel(
@@ -28,7 +33,6 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
             delta= usdc_ntl
         )
     ]
-    # print(state_updates)
     
     new_state = state.model_copy(deep=True)
     for update in state_updates:
