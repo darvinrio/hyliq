@@ -1,9 +1,12 @@
+from turtle import mode
+from typing import List
 import requests
 import json
 import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
+from models.class_models.user_ledger_updates import AccountActivationGasTxModel, AccountClassTransferTxModel, CStakingTransferTxModel, DepositTxModel, InternalTransferTxModel, SpotTransferTxModel, TxModel, WithdrawTxModel
 from models.df_models.user_ledger_updates import user_ledger_updates_schema
 
 
@@ -121,3 +124,139 @@ def get_user_ledger_updates_dataframe(
     df = pl.DataFrame(rows, schema_overrides=user_ledger_updates_schema)
     logger.debug(f"User ledger updates DataFrame shape: {df.shape}")
     return df
+
+def get_user_ledger_updates_pydantic(address: str, use_cache: bool = True) -> List[TxModel]:
+    """
+    Load user non-funding ledger updates into a list of Pydantic models.
+
+    Args:
+        address: User address to fetch ledger updates for
+        use_cache: Whether to use cached data if available
+    Returns:
+        List of TxModel instances containing user ledger updates data
+    """
+    
+    ledger_updates = get_user_ledger_updates_json(address, use_cache)
+
+    if not ledger_updates:
+        logger.warning(f"No user ledger updates found for address {address}")
+        return pl.DataFrame(schema=user_ledger_updates_schema)
+    
+    models: List[TxModel] = []
+    for update in ledger_updates:
+        try:
+        
+            time = int(update.get("time"))
+            hash = update.get("hash")
+            delta = update.get("delta")
+            type = delta.get("type")
+            
+            if type == "deposit":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=DepositTxModel(
+                        type="deposit",
+                        usdc=float(delta.get("usdc", 0.0))
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "withdraw":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=WithdrawTxModel(
+                        type="withdraw",
+                        usdc=float(delta.get("usdc", 0.0)),
+                        nonce=delta.get("nonce"),
+                        fee=float(delta.get("fee", 0.0))
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "internalTransfer":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=InternalTransferTxModel(
+                        type="internalTransfer",
+                        usdc=float(delta.get("usdc", 0.0)),
+                        user=delta.get("user"),
+                        destination=delta.get("destination"),
+                        fee=float(delta.get("fee", 0.0))
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "accountClassTransfer":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=AccountClassTransferTxModel(
+                        type="accountClassTransfer",
+                        usdc=float(delta.get("usdc", 0.0)),
+                        toPerp=delta.get("toPerp")
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "spotTransfer":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=SpotTransferTxModel(
+                        type="spotTransfer",
+                        token=delta.get("token"),
+                        amount=float(delta.get("amount", 0.0)),
+                        usdcValue=float(delta.get("usdcValue", 0.0)),
+                        user=delta.get("user"),
+                        destination=delta.get("destination"),
+                        fee=float(delta.get("fee", 0.0)),
+                        nativeTokenFee=float(delta.get("nativeTokenFee", 0.0))
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "cStakingTransfer":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=CStakingTransferTxModel(
+                        type="cStakingTransfer",
+                        token=delta.get("token"),
+                        amount=float(delta.get("amount", 0.0)),
+                        isDeposit=delta.get("isDeposit")
+                    )
+                )
+                
+                models.append(model)
+                
+            elif type == "accountActivationGas":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=AccountActivationGasTxModel(
+                        type="accountActivationGas",
+                        amount=float(delta.get("amount", 0.0)),
+                        token=delta.get("token")
+                    )
+                )
+                
+                models.append(model)
+                
+            else:
+                logger.error(f"Unknown ledger update type: {type} in transaction {hash}")
+                continue
+        
+        except Exception as e:
+            logger.error(f"Error processing ledger update {update}: {e}")
+            continue
+        
+    logger.debug(f"Parsed {len(models)} ledger update models for address {address}")
+    return models

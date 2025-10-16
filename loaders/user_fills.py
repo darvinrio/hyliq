@@ -1,9 +1,11 @@
+from typing import List
 import requests
 import json
 import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
+from models.class_models.user_fills import UserFillsModel
 from models.df_models.user_fills import user_fills_schema
 
 
@@ -110,3 +112,52 @@ def get_user_fills_dataframe(
     df = pl.DataFrame(rows, schema_overrides=user_fills_schema)
     logger.debug(f"User fills DataFrame shape: {df.shape}")
     return df
+
+def get_user_fills_pydantic(
+    address: str, use_cache: bool = True, aggregate_by_time: bool = True
+) -> List[UserFillsModel]:
+    """
+    Load user fills into a list of Pydantic models.
+
+    Args:
+        address: User address to fetch fills for
+        use_cache: Whether to use cached data if available
+        aggregate_by_time: Whether to aggregate fills by time
+
+    Returns:
+        List of UserFillsModel instances
+    """
+
+    user_fills = get_user_fills_json(address, use_cache, aggregate_by_time)
+
+    if not user_fills:
+        logger.warning(f"No user fills found for address {address}")
+        return []
+
+    # Convert user fills to list of Pydantic models
+    models: List[UserFillsModel] = []
+    for fill in user_fills:
+        try:
+            model = UserFillsModel(
+                time=int(fill["time"]),
+                coin=fill.get("coin"),
+                px=float(fill.get("px")),
+                sz=float(fill.get("sz")),
+                side=fill.get("side").lower(),
+                startPosition=float(fill.get("startPosition")),
+                dir=fill.get("dir"),
+                closedPnl=float(fill.get("closedPnl")),
+                hash=fill.get("hash"),
+                oid=int(fill.get("oid")) if fill.get("oid") is not None else None,
+                crossed=fill.get("crossed"),
+                fee=float(fill.get("fee")),
+                tid=int(fill.get("tid")),
+                feeToken=fill.get("feeToken"),
+                twapId=int(fill.get("twapId")) if fill.get("twapId") is not None else None,
+            )
+            models.append(model)
+        except Exception as e:
+            logger.error(f"Error parsing Fill entry into model: {e}")
+
+    logger.debug(f"Parsed {len(models)} user fills into Pydantic models")
+    return models

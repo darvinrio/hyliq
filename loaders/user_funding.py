@@ -1,9 +1,11 @@
+from typing import List
 import requests
 import json
 import os
 import polars as pl
 from loguru import logger
 from config import cache_dir
+from models.class_models.user_funding import UserFundingModel
 from models.df_models.user_funding import user_funding_schema
 
 
@@ -91,3 +93,45 @@ def get_user_funding_dataframe(address: str, use_cache: bool = True) -> pl.DataF
     df = pl.DataFrame(rows, schema_overrides=user_funding_schema)
     logger.debug(f"User funding DataFrame shape: {df.shape}")
     return df
+
+def get_user_funding_pydantic(address: str, use_cache: bool = True) -> List[UserFundingModel]:
+    """
+    Load user funding into a list of Pydantic models.
+
+    Args:
+        address: User address to fetch funding for
+        use_cache: Whether to use cached data if available
+
+    Returns:
+        List of UserFundingModel instances containing user funding data
+    """
+
+    user_funding = get_user_funding_json(address, use_cache)
+
+    if not user_funding:
+        logger.warning(f"No user funding found for address {address}")
+        return []
+
+    # Convert user funding to list of Pydantic models
+    funding_models = []
+    for funding in user_funding:
+        try:
+            delta = funding.get("delta")
+            print(delta.get("nSamples") )
+            model = UserFundingModel(
+                time=int(funding.get("time")),
+                hash=funding.get("hash"),
+                delta_type=delta.get("type"),
+                coin=delta.get("coin"),
+                usdc=float(delta.get("usdc")),
+                szi=float(delta.get("szi")),
+                fundingRate=float(delta.get("fundingRate")),
+                nSamples=delta.get("nSamples") if delta.get("nSamples") is not None else None,
+            )
+            funding_models.append(model)
+        except Exception as e:
+            logger.error(f"Error parsing Funding record for address {address}: {e}")
+            continue
+
+    logger.debug(f"Parsed {len(funding_models)} user funding records for address {address}")
+    return funding_models
