@@ -48,19 +48,31 @@ for eoa in eoas:
     ]
     
     updates = sorted(updates, key=lambda x: x.time)
-    initial_state = init_state(addr, 0)
+    initial_state = init_state(addr.lower(), 0)
     new_state = initial_state.model_copy(deep=True)
     for update in updates:
-        if isinstance(update, TxModel):
-            new_state = user_ledger_update(new_state, update)
-        elif isinstance(update, TWAPModel):
-            new_state = twap_state_update(new_state, update)
-        elif isinstance(update, UserFillsModel):
-            new_state = user_fill_state_update(new_state, update)
-        else:
-            logger.error(f"Unknown update type: {type(update)}")
+        try:
+            if isinstance(update, TxModel):
+                new_state = user_ledger_update(new_state, update)
+            elif isinstance(update, TWAPModel):
+                new_state = twap_state_update(new_state, update)
+            elif isinstance(update, UserFillsModel):
+                new_state = user_fill_state_update(new_state, update)
+            else:
+                logger.error(f"Unknown update type: {type(update)}")
+                continue
+            
+        except Exception as e:
+            logger.error(f"Error processing {update.name} update at {update.time} - {e}")
             continue
         
         # logger.info(f"Processed update at {update.time} - New state: {new_state}")
-        logger.debug(f"Processed {update.name} update at {update.time}")
-        logger.debug(f"Spot Balances: {new_state.spot_positions}")
+        # logger.debug(f"Processed {update.name} update at {update.time}")
+        # logger.debug(f"Spot Balances: {new_state.spot_positions}")
+        
+        # print(f"Processed update at {update.time} - New state: {new_state}")
+        print(f"Processed {update.name} update at {update.time}")
+        print(f"Spot Balances: {new_state.spot_positions}")
+        print()
+        
+    # logger.success(f"Final state for {label}: {new_state}")
