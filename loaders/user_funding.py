@@ -94,7 +94,10 @@ def get_user_funding_dataframe(address: str, use_cache: bool = True) -> pl.DataF
     logger.debug(f"User funding DataFrame shape: {df.shape}")
     return df
 
-def get_user_funding_pydantic(address: str, use_cache: bool = True) -> List[UserFundingModel]:
+
+def get_user_funding_pydantic(
+    address: str, use_cache: bool = True
+) -> List[UserFundingModel]:
     """
     Load user funding into a list of Pydantic models.
 
@@ -117,7 +120,7 @@ def get_user_funding_pydantic(address: str, use_cache: bool = True) -> List[User
     for funding in user_funding:
         try:
             delta = funding.get("delta")
-            print(delta.get("nSamples") )
+            print(delta.get("nSamples"))
             model = UserFundingModel(
                 time=int(funding.get("time")),
                 hash=funding.get("hash"),
@@ -126,12 +129,16 @@ def get_user_funding_pydantic(address: str, use_cache: bool = True) -> List[User
                 usdc=float(delta.get("usdc")),
                 szi=float(delta.get("szi")),
                 fundingRate=float(delta.get("fundingRate")),
-                nSamples=delta.get("nSamples") if delta.get("nSamples") is not None else None,
+                nSamples=(
+                    delta.get("nSamples") if delta.get("nSamples") is not None else None
+                ),
             )
             funding_models.append(model)
         except Exception as e:
             logger.error(f"Error parsing Funding record for address {address}: {e}")
             continue
 
-    logger.debug(f"Parsed {len(funding_models)} user funding records for address {address}")
+    logger.debug(
+        f"Parsed {len(funding_models)} user funding records for address {address}"
+    )
     return funding_models

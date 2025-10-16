@@ -81,7 +81,7 @@ def get_twap_history_dataframe(address: str, use_cache: bool = True) -> pl.DataF
 
         rows.append(
             {
-                "time": int(entry["time"])*1000,
+                "time": int(entry["time"]) * 1000,
                 "coin": state.get("coin", ""),
                 "user": state.get("user", ""),
                 "side": state.get("side", ""),
@@ -102,6 +102,7 @@ def get_twap_history_dataframe(address: str, use_cache: bool = True) -> pl.DataF
     logger.debug(f"TWAP history DataFrame shape: {df.shape}")
     return df
 
+
 def get_twap_history_pydantic(address: str, use_cache: bool = True) -> List[TWAPModel]:
     """
     Load TWAP history into a list of Pydantic models.
@@ -114,19 +115,19 @@ def get_twap_history_pydantic(address: str, use_cache: bool = True) -> List[TWAP
         List of TWAPModel instances containing TWAP history data
     """
     twap_history = get_twap_history_json(address, use_cache)
-    
+
     if not twap_history:
         logger.warning(f"No TWAP history found for address {address}")
         return []
-    
+
     models: List[TWAPModel] = []
     for entry in twap_history:
         try:
             state = entry.get("state")
             status = entry.get("status")
-            
+
             model = TWAPModel(
-                time=int(entry["time"])*1000,
+                time=int(entry["time"]) * 1000,
                 coin=state.get("coin"),
                 user=state.get("user"),
                 side=state.get("side").lower(),
@@ -138,12 +139,12 @@ def get_twap_history_pydantic(address: str, use_cache: bool = True) -> List[TWAP
                 randomize=state.get("randomize"),
                 timestamp=int(state.get("timestamp")),
                 status=status.get("status"),
-                twapId=entry.get("twapId", None)
+                twapId=entry.get("twapId", None),
             )
             models.append(model)
         except Exception as e:
             logger.error(f"Error parsing TWAP entry for address {address}: {e}")
             continue
-    
+
     logger.debug(f"Parsed {len(models)} TWAP models for address {address}")
     return models

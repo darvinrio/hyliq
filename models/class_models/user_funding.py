@@ -3,6 +3,7 @@ from enum import Enum
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
 
+
 class UserFundingModel(BaseModel):
     """
     User Funding Model
@@ -15,6 +16,7 @@ class UserFundingModel(BaseModel):
         position (float): The user's position size at the time of funding.
         rate (float): The funding rate applied.
     """
+
     time: int = Field(..., description="Timestamp in milliseconds")
     hash: str = Field(..., description="Transaction hash")
     delta_type: str = Field(..., description="Type of funding delta")
@@ -22,7 +24,9 @@ class UserFundingModel(BaseModel):
     usdc: float = Field(..., description="Funding amount in USDC")
     szi: float = Field(..., description="User's position size at funding time")
     fundingRate: float = Field(..., description="Funding rate applied")
-    nSamples: int | None = Field(..., description="Number of samples used to calculate funding")
+    nSamples: int | None = Field(
+        ..., description="Number of samples used to calculate funding"
+    )
 
     @property
     def datetime(self):

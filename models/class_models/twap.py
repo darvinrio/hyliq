@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
 
+
 class TWAPModel(BaseModel):
     """
     Time-Weighted Average Price (TWAP) Model
@@ -11,6 +12,7 @@ class TWAPModel(BaseModel):
         start_time (str): The start time for the TWAP calculation in ISO 8601 format.
         end_time (str): The end time for the TWAP calculation in ISO 8601 format.
     """
+
     time: int = Field(..., description="Timestamp in milliseconds")
     coin: str = Field(..., description="Coin symbol")
     user: str = Field(..., description="User address")
@@ -24,8 +26,7 @@ class TWAPModel(BaseModel):
     timestamp: int = Field(..., description="Order timestamp")
     status: str = Field(..., description="Order status")
     twapId: int | None = Field(None, description="TWAP order ID")
-    
+
     @property
     def datetime(self):
         return datetime.fromtimestamp(self.time / 1000, tz=timezone.utc)
-    

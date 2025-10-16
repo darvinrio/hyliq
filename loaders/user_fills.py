@@ -113,6 +113,7 @@ def get_user_fills_dataframe(
     logger.debug(f"User fills DataFrame shape: {df.shape}")
     return df
 
+
 def get_user_fills_pydantic(
     address: str, use_cache: bool = True, aggregate_by_time: bool = True
 ) -> List[UserFillsModel]:
@@ -153,7 +154,9 @@ def get_user_fills_pydantic(
                 fee=float(fill.get("fee")),
                 tid=int(fill.get("tid")),
                 feeToken=fill.get("feeToken"),
-                twapId=int(fill.get("twapId")) if fill.get("twapId") is not None else None,
+                twapId=(
+                    int(fill.get("twapId")) if fill.get("twapId") is not None else None
+                ),
             )
             models.append(model)
         except Exception as e:

@@ -55,6 +55,7 @@ def plot_dnhype_portfolio():
     )
     viz.save("portfolio.html")
 
+
 def get_dnhype_actions_df():
     eoas = [
         {"address": dnhype_short_eoa, "label": "DN Hype Short"},
@@ -76,31 +77,36 @@ def get_dnhype_actions_df():
         funding_df = get_user_funding_dataframe(addr, use_cache=not REFRESH)
         funding_df.write_csv(f"debug/{filename_uid}_funding.csv")
 
-        ledger_updates_df = get_user_ledger_updates_dataframe(addr, use_cache=not REFRESH)
+        ledger_updates_df = get_user_ledger_updates_dataframe(
+            addr, use_cache=not REFRESH
+        )
         ledger_updates_df.write_csv(f"debug/{filename_uid}_ledger_updates.csv")
-        
-        twap_df.select([
-            "coin",
-            "side",
-            # "executedNtl", # actual size executed
-        ]).unique().write_csv(f"debug/unique/twap.csv")
-        
-        fills_df.select([
-            "coin",
-            "side",
-            # "dir", 
-            # "sz", # actual size executed
-        ]).unique().write_csv(f"debug/unique/fills.csv")
-        
-        ledger_updates_df.select([
-            "delta_type",
-            "token",
-            # "amount",
-            "user",
-            "destination",
-            "toPerp",
-            "isDeposit",
-        ]).unique().write_csv(f"debug/unique/ledger_updates.csv")
-        
-        
-        
+
+        twap_df.select(
+            [
+                "coin",
+                "side",
+                # "executedNtl", # actual size executed
+            ]
+        ).unique().write_csv(f"debug/unique/twap.csv")
+
+        fills_df.select(
+            [
+                "coin",
+                "side",
+                # "dir",
+                # "sz", # actual size executed
+            ]
+        ).unique().write_csv(f"debug/unique/fills.csv")
+
+        ledger_updates_df.select(
+            [
+                "delta_type",
+                "token",
+                # "amount",
+                "user",
+                "destination",
+                "toPerp",
+                "isDeposit",
+            ]
+        ).unique().write_csv(f"debug/unique/ledger_updates.csv")

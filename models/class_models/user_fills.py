@@ -3,6 +3,7 @@ from enum import Enum
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
 
+
 class OrderDirection(str, Enum):
     OPEN_LONG = "Open Long"
     OPEN_SHORT = "Open Short"
@@ -11,6 +12,7 @@ class OrderDirection(str, Enum):
     SELL = "Sell"
     BUY = "Buy"
     ADL = "Auto-Deleveraging"
+
 
 class UserFillsModel(BaseModel):
     """
@@ -30,6 +32,7 @@ class UserFillsModel(BaseModel):
         referrerRebate (float): The rebate given to the referrer, if any.
         orderId (int | None): The ID of the order associated with the fill, if available.
     """
+
     coin: str = Field(..., description="Coin symbol")
     px: float = Field(..., description="Price at which the order was filled")
     sz: float = Field(..., description="Order size")
