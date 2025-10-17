@@ -24,6 +24,9 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
     if is_perp:
         leverage = state.perp_positions.get(token).leverage
         usdc_ntl = -(sz * fill.px) / leverage
+        if (start_position < 0 and delta > 0) or (start_position > 0 and delta < 0):
+            print(usdc_ntl, "flipped")
+            usdc_ntl = -usdc_ntl
     else:
         usdc_ntl = -(fill.sz * fill.px) if side == "b" else (fill.sz * fill.px)
 
