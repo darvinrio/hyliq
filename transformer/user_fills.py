@@ -15,7 +15,7 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
         in ["Open Long", "Open Short", "Close Long", "Close Short", "Auto-Deleveraging"]
         else False
     )
-    token = fill.coin if fill.coin[0] != "@" else coin_id_map.get(fill.coin, fill.coin)
+    token = coin_id_map.get(fill.coin, fill.coin)
     delta = sz
     # ntl = sz * fill.px if side == "b" else -sz * fill.px
     # usdc_ntl = ntl if not is_perp else -ntl

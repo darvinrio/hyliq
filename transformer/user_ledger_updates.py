@@ -113,11 +113,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
 
     elif type == "spotTransfer":
         delta_token = ledger_entry.delta.token
-        delta_token = (
-            delta_token
-            if delta_token[0] != "@"
-            else coin_id_map.get(delta_token, delta_token)
-        )
+        delta_token = coin_id_map.get(delta_token, delta_token)
         # transfer out
         if ledger_entry.delta.user == state.user:
             new_state_update = StateUpdateModel(
@@ -139,11 +135,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
         # fee
         if ledger_entry.delta.feeToken:
             fee_token = ledger_entry.delta.feeToken
-            fee_token = (
-                fee_token
-                if fee_token[0] != "@"
-                else coin_id_map.get(fee_token, fee_token)
-            )
+            fee_token = coin_id_map.get(fee_token, fee_token)
             fee_drop = StateUpdateModel(
                 time=int(time.timestamp() * 1000),
                 token=fee_token,
@@ -154,11 +146,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
 
     elif type == "cStakingTransfer":
         delta_token = ledger_entry.delta.token
-        delta_token = (
-            delta_token
-            if delta_token[0] != "@"
-            else coin_id_map.get(delta_token, delta_token)
-        )
+        delta_token = coin_id_map.get(delta_token, delta_token)
         # only spot updates considered
         # deposit (stake)
         if ledger_entry.delta.isDeposit:
@@ -181,11 +169,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
 
     elif type == "accountActivationGas":
         delta_token = ledger_entry.delta.token
-        delta_token = (
-            delta_token
-            if delta_token[0] != "@"
-            else coin_id_map.get(delta_token, delta_token)
-        )
+        delta_token = coin_id_map.get(delta_token, delta_token)
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token=delta_token,

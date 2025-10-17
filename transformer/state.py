@@ -27,11 +27,7 @@ def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
     new_spot_usdc = state.spot_usdc
     new_perp_usdc = state.perp_usdc
 
-    token = (
-        update.token
-        if update.token[0] != "@"
-        else coin_id_map.get(update.token, update.token)
-    )
+    token = coin_id_map.get(update.token, update.token)
 
     if token == "USDC":
         if update.is_perp:
