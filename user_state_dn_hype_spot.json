@@ -52463,5 +52463,157 @@
       },
       "perp_positions": {}
     }
+  },
+  {
+    "time": 1760557341316,
+    "update": {
+      "name": "TWAP",
+      "time": 1760557341316,
+      "coin": "@107",
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "side": "b",
+      "sz": 60000.0,
+      "executedSz": 60000.0,
+      "executedNtl": 2275273.97541,
+      "minutes": 270,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760557341316,
+      "status": "finished",
+      "twapId": 1273346
+    },
+    "new_state": {
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "time": 1760557341316000,
+      "spot_usdc": 2297519.549257198,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 120110.1849999998,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {}
+    }
+  },
+  {
+    "time": 1760557341316,
+    "update": {
+      "name": "TWAP",
+      "time": 1760557341316,
+      "coin": "@107",
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "side": "b",
+      "sz": 60000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 270,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760557341316,
+      "status": "activated",
+      "twapId": 1273346
+    },
+    "new_state": {
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "time": 1760557341316000,
+      "spot_usdc": 2297519.549257198,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 120110.1849999998,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {}
+    }
+  },
+  {
+    "time": 1760612554072,
+    "update": {
+      "name": "TWAP",
+      "time": 1760612554072,
+      "coin": "@107",
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "side": "b",
+      "sz": 45000.0,
+      "executedSz": 45000.0,
+      "executedNtl": 1747675.54073,
+      "minutes": 210,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760612554072,
+      "status": "finished",
+      "twapId": 1274934
+    },
+    "new_state": {
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "time": 1760612554072000,
+      "spot_usdc": 549844.0085271979,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 165110.1849999998,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {}
+    }
+  },
+  {
+    "time": 1760612554072,
+    "update": {
+      "name": "TWAP",
+      "time": 1760612554072,
+      "coin": "@107",
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "side": "b",
+      "sz": 45000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 210,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760612554072,
+      "status": "activated",
+      "twapId": 1274934
+    },
+    "new_state": {
+      "user": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+      "time": 1760612554072000,
+      "spot_usdc": 549844.0085271979,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 165110.1849999998,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {}
+    }
   }
 ]
