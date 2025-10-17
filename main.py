@@ -27,7 +27,7 @@ dnhype_spot_eoa = "0xca36897cd0783a558f46407cd663d0f46d2f3386"
 
 eoas = [
     {"address": dnhype_short_eoa, "label": "DN Hype Short"},
-    # {"address": dnhype_spot_eoa, "label": "DN Hype Spot"},
+    {"address": dnhype_spot_eoa, "label": "DN Hype Spot"},
 ]
 
 for eoa in eoas:
