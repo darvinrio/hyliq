@@ -5,30 +5,31 @@ from models.class_models.user_ledger_updates import TxModel
 from transformer.state import state_update
 from constants.coin_id import coin_id_map
 
+
 def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
-    
+
     time = ledger_entry.datetime
     type = ledger_entry.delta.type
     state_updates = []
-    
+
     if type == "deposit":
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
             is_perp=True,
-            delta=ledger_entry.delta.usdc
+            delta=ledger_entry.delta.usdc,
         )
         state_updates.append(new_state_update)
-        
+
     elif type == "withdraw":
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
             is_perp=True,
-            delta=-ledger_entry.delta.usdc
+            delta=-ledger_entry.delta.usdc,
         )
         state_updates.append(new_state_update)
-        
+
     elif type == "internalTransfer":
         # perp to perp transfer
         # transfer out
@@ -37,7 +38,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=True,
-                delta=-ledger_entry.delta.usdc
+                delta=-ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update)
         # transfer in
@@ -46,10 +47,10 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=True,
-                delta=ledger_entry.delta.usdc
+                delta=ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update)
-            
+
     elif type == "accountClassTransfer":
         # transfer from spot to perp
         if ledger_entry.delta.toPerp:
@@ -58,7 +59,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=False,
-                delta=-ledger_entry.delta.usdc
+                delta=-ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update)
             # transfer into perp
@@ -66,7 +67,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=True,
-                delta=ledger_entry.delta.usdc
+                delta=ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update_2)
         # transfer from perp to spot
@@ -76,7 +77,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=True,
-                delta=-ledger_entry.delta.usdc
+                delta=-ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update)
             # transfer into spot
@@ -84,20 +85,24 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token="USDC",
                 is_perp=False,
-                delta=ledger_entry.delta.usdc
+                delta=ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update_2)
-            
+
     elif type == "spotTransfer":
-        delta_token = ledger_entry.delta.token 
-        delta_token = delta_token if delta_token[0] != "@" else coin_id_map.get(delta_token, delta_token)
+        delta_token = ledger_entry.delta.token
+        delta_token = (
+            delta_token
+            if delta_token[0] != "@"
+            else coin_id_map.get(delta_token, delta_token)
+        )
         # transfer out
         if ledger_entry.delta.user == state.user:
             new_state_update = StateUpdateModel(
                 time=int(time.timestamp() * 1000),
                 token=delta_token,
                 is_perp=False,
-                delta=-ledger_entry.delta.amount
+                delta=-ledger_entry.delta.amount,
             )
             state_updates.append(new_state_update)
         # transfer in
@@ -106,24 +111,32 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token=delta_token,
                 is_perp=False,
-                delta=ledger_entry.delta.amount
+                delta=ledger_entry.delta.amount,
             )
             state_updates.append(new_state_update)
         # fee
         if ledger_entry.delta.feeToken:
             fee_token = ledger_entry.delta.feeToken
-            fee_token = fee_token if fee_token[0] != "@" else coin_id_map.get(fee_token, fee_token)
+            fee_token = (
+                fee_token
+                if fee_token[0] != "@"
+                else coin_id_map.get(fee_token, fee_token)
+            )
             fee_drop = StateUpdateModel(
                 time=int(time.timestamp() * 1000),
                 token=fee_token,
                 is_perp=False,
-                delta=-ledger_entry.delta.fee
+                delta=-ledger_entry.delta.fee,
             )
             state_updates.append(fee_drop)
-    
+
     elif type == "cStakingTransfer":
-        delta_token = ledger_entry.delta.token 
-        delta_token = delta_token if delta_token[0] != "@" else coin_id_map.get(delta_token, delta_token)
+        delta_token = ledger_entry.delta.token
+        delta_token = (
+            delta_token
+            if delta_token[0] != "@"
+            else coin_id_map.get(delta_token, delta_token)
+        )
         # only spot updates considered
         # deposit (stake)
         if ledger_entry.delta.isDeposit:
@@ -131,7 +144,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token=delta_token,
                 is_perp=False,
-                delta=-ledger_entry.delta.amount
+                delta=-ledger_entry.delta.amount,
             )
             state_updates.append(new_state_update)
         # withdrawal (unstake)
@@ -140,26 +153,32 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 time=int(time.timestamp() * 1000),
                 token=delta_token,
                 is_perp=False,
-                delta=+ledger_entry.delta.amount
+                delta=+ledger_entry.delta.amount,
             )
             state_updates.append(new_state_update)
-            
+
     elif type == "accountActivationGas":
-        delta_token = ledger_entry.delta.token 
-        delta_token = delta_token if delta_token[0] != "@" else coin_id_map.get(delta_token, delta_token)
+        delta_token = ledger_entry.delta.token
+        delta_token = (
+            delta_token
+            if delta_token[0] != "@"
+            else coin_id_map.get(delta_token, delta_token)
+        )
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token=delta_token,
             is_perp=False,
-            delta=-ledger_entry.delta.amount
+            delta=-ledger_entry.delta.amount,
         )
         state_updates.append(new_state_update)
-        
+
     else:
-        logger.error(f"Unknown ledger update type: {type} in transaction {ledger_entry.hash}")
-    
+        logger.error(
+            f"Unknown ledger update type: {type} in transaction {ledger_entry.hash}"
+        )
+
     new_state = state.model_copy(deep=True)
     for update in state_updates:
         new_state = state_update(new_state, update)
-        
+
     return new_state

@@ -95,6 +95,7 @@ class TxModel(BaseModel):
     """
     User Ledger Update Model
     """
+
     time: int = Field(..., description="Timestamp in milliseconds")
     hash: str = Field(..., description="Transaction hash")
     delta: LedgerUpdates = Field(..., description="Ledger update details")
@@ -102,7 +103,7 @@ class TxModel(BaseModel):
     @property
     def datetime(self):
         return datetime.fromtimestamp(self.time / 1000, tz=timezone.utc)
-    
+
     @computed_field
     @property
     def name(self) -> str:

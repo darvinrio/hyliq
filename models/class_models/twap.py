@@ -3,16 +3,18 @@ from pydantic import BaseModel, Field
 from datetime import datetime, timezone
 from models.class_models.common import OrderSide
 
+
 class TwapStatus(str, Enum):
     f = "finished"
     a = "activated"
     t = "terminated"
     e = "error"
-    
+
+
 class TWAPModel(BaseModel):
     """
     Time-Weighted Average Price (TWAP) Model
-    
+
     Attributes:
         time (int): The timestamp of the TWAP order in milliseconds.
         coin (str): The coin symbol.

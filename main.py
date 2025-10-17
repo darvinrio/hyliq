@@ -46,15 +46,15 @@ for eoa in eoas:
     # print(user_fills)
     # print(user_funding)
     # print(user_ledger_updates)
-    
+
     updates = [
         *twaps,
         # *user_funding,
         *user_fills,
         *user_ledger_updates,
-        *leverage_updates
+        *leverage_updates,
     ]
-    
+
     updates = sorted(updates, key=lambda x: x.time)
     initial_state = init_state(addr.lower(), 0)
     new_state = initial_state.model_copy(deep=True)
@@ -72,23 +72,27 @@ for eoa in eoas:
         else:
             logger.error(f"Unknown update type: {type(update)}")
             continue
-            
+
         # except Exception as e:
         #     logger.error(f"Error processing {update.name} update at {update.time} - {e}")
         #     continue
-        
+
         # print(f"Processed update at {update.time} - New state: {new_state}")
         # if update.name != "UserFill":
-        dt = datetime.fromtimestamp(update.time/1000)
+        dt = datetime.fromtimestamp(update.time / 1000)
         # print(f"Processed {update.model_dump()} update at {update.time} - {dt}")
         # print(f"Spot Balances: {new_state.spot_positions}")
         # print(f"spot_usdc:{new_state.spot_usdc}, perp_usdc:{new_state.perp_usdc}")
         # print(new_state.model_dump())
-        print(json.dumps({
-            "time": update.time,
-            "update": update.model_dump(),
-            "new_state": new_state.model_dump(),
-        }))
+        print(
+            json.dumps(
+                {
+                    "time": update.time,
+                    "update": update.model_dump(),
+                    "new_state": new_state.model_dump(),
+                }
+            )
+        )
         print(",")
     print("]")
     logger.success(f"Final state for {label}: {new_state.model_dump_json(indent=2)}")

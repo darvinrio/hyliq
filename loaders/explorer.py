@@ -132,9 +132,10 @@ def get_user_explorer_dataframe(address: str, use_cache: bool = True) -> pl.Data
     logger.debug(f"User details DataFrame shape: {df.shape}")
     return df
 
+
 def get_user_explorer_pydantic(
     address: str, use_cache: bool = True
-)-> List[UpdateLeverageModel]:
+) -> List[UpdateLeverageModel]:
     """
     Load user details into a list of Pydantic models.
     Currently only supports UpdateLeverageModel.
@@ -146,7 +147,7 @@ def get_user_explorer_pydantic(
     Returns:
         List of UpdateLeverageModel instances containing user transaction details
     """
-    
+
     # Use filtered data by default (comment out filtered=True to use raw data)
     user_details = get_user_explorer_json(address, use_cache, filtered=True)
     # user_details = get_user_details_json(address, use_cache, filtered=False)  # Uncomment for raw data
