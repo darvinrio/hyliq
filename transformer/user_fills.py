@@ -6,6 +6,7 @@ from constants.coin_id import coin_id_map
 def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateModel:
     time = fill.datetime
     side = fill.side
+    start_position = fill.startPosition
     sz = fill.sz if side == "b" else -fill.sz
     is_perp = True if fill.dir in ["Open Long", "Open Short", "Close Long", "Close Short" , "Auto-Deleveraging"] else False
     token = fill.coin if fill.coin[0] != "@" else coin_id_map.get(fill.coin, fill.coin)
@@ -18,7 +19,7 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
         leverage = state.perp_positions.get(token).leverage
         usdc_ntl = -(sz * fill.px)/leverage
     else:
-        usdc_ntl = (sz * fill.px) if side == "b" else -(sz * fill.px)
+        usdc_ntl = -(fill.sz * fill.px) if side == "b" else (fill.sz * fill.px)
     
     state_updates = [
         StateUpdateModel(
