@@ -34,7 +34,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -72,7 +73,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -112,7 +114,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -155,7 +158,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -198,7 +202,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -243,7 +248,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -286,7 +292,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -329,7 +336,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -372,7 +380,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -415,7 +424,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -458,7 +468,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -501,7 +512,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -544,7 +556,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -587,7 +600,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -630,7 +644,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -673,7 +688,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -716,7 +732,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -759,7 +776,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -802,7 +820,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -845,7 +864,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -888,7 +908,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -931,7 +952,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -974,7 +996,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1017,7 +1040,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1060,7 +1084,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1103,7 +1128,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1146,7 +1172,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1189,7 +1216,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1232,7 +1260,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1275,7 +1304,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1318,7 +1348,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1361,7 +1392,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1406,7 +1438,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1451,7 +1484,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1496,7 +1530,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1541,7 +1576,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1586,7 +1622,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1631,7 +1668,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1676,7 +1714,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1721,7 +1760,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1766,7 +1806,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1811,7 +1852,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1856,7 +1898,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1901,7 +1944,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1946,7 +1990,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -1991,7 +2036,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2036,7 +2082,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2081,7 +2128,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2126,7 +2174,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2171,7 +2220,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2216,7 +2266,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2261,7 +2312,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2306,7 +2358,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2351,7 +2404,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2396,7 +2450,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2441,7 +2496,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2486,7 +2542,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2531,7 +2588,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2576,7 +2634,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2621,7 +2680,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2666,7 +2726,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2711,7 +2772,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2756,7 +2818,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2801,7 +2864,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2846,7 +2910,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2891,7 +2956,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2936,7 +3002,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -2981,7 +3048,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3026,7 +3094,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3071,7 +3140,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3116,7 +3186,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3161,7 +3232,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3206,7 +3278,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3251,7 +3324,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3296,7 +3370,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3341,7 +3416,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3386,7 +3462,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3431,7 +3508,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3476,7 +3554,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3521,7 +3600,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3566,7 +3646,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3611,7 +3692,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3656,7 +3738,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3701,7 +3784,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3746,7 +3830,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3791,7 +3876,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3836,7 +3922,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3881,7 +3968,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3926,7 +4014,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -3971,7 +4060,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4016,7 +4106,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4061,7 +4152,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4106,7 +4198,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4151,7 +4244,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4196,7 +4290,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4241,7 +4336,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4286,7 +4382,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4331,7 +4428,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4376,7 +4474,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4421,7 +4520,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4466,7 +4566,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4511,7 +4612,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4556,7 +4658,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4601,7 +4704,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4646,7 +4750,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4691,7 +4796,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4736,7 +4842,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4779,7 +4886,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4822,7 +4930,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4867,7 +4976,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4912,7 +5022,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -4957,7 +5068,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5002,7 +5114,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5047,7 +5160,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5092,7 +5206,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5137,7 +5252,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5182,7 +5298,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5227,7 +5344,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5272,7 +5390,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5317,7 +5436,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5362,7 +5482,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5407,7 +5528,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5452,7 +5574,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5497,7 +5620,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5542,7 +5666,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5587,7 +5712,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5632,7 +5758,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5677,7 +5804,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5722,7 +5850,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5767,7 +5896,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5812,7 +5942,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5857,7 +5988,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5902,7 +6034,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5947,7 +6080,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -5992,7 +6126,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6037,7 +6172,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6082,7 +6218,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6127,7 +6264,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6172,7 +6310,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6217,7 +6356,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6262,7 +6402,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6307,7 +6448,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6352,7 +6494,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6397,7 +6540,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6442,7 +6586,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6487,7 +6632,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6532,7 +6678,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6577,7 +6724,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6622,7 +6770,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6667,7 +6816,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6712,7 +6862,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6757,7 +6908,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6802,7 +6954,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6847,7 +7000,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6892,7 +7046,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6937,7 +7092,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -6982,7 +7138,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7027,7 +7184,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7072,7 +7230,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7117,7 +7276,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7162,7 +7322,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7207,7 +7368,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7252,7 +7414,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7297,7 +7460,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7342,7 +7506,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7387,7 +7552,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7432,7 +7598,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7477,7 +7644,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7522,7 +7690,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7567,7 +7736,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7612,7 +7782,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7657,7 +7828,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7702,7 +7874,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7747,7 +7920,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7792,7 +7966,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7837,7 +8012,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7882,7 +8058,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7927,7 +8104,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -7972,7 +8150,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8017,7 +8196,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8062,7 +8242,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8107,7 +8288,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8152,7 +8334,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8197,7 +8380,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8242,7 +8426,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8287,7 +8472,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8330,7 +8516,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8373,7 +8560,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8418,7 +8606,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8463,7 +8652,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8508,7 +8698,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8553,7 +8744,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8598,7 +8790,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8643,7 +8836,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8688,7 +8882,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8733,7 +8928,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8778,7 +8974,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8823,7 +9020,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8868,7 +9066,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8913,7 +9112,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -8958,7 +9158,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9003,7 +9204,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9048,7 +9250,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9093,7 +9296,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9138,7 +9342,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9183,7 +9388,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9228,7 +9434,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9273,7 +9480,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9318,7 +9526,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9363,7 +9572,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9408,7 +9618,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9453,7 +9664,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9498,7 +9710,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9543,7 +9756,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9588,7 +9802,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9633,7 +9848,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9678,7 +9894,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9723,7 +9940,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9768,7 +9986,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9813,7 +10032,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9858,7 +10078,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9903,7 +10124,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9948,7 +10170,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -9993,7 +10216,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10038,7 +10262,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10083,7 +10308,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10128,7 +10354,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10173,7 +10400,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10218,7 +10446,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10263,7 +10492,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10308,7 +10538,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10353,7 +10584,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10398,7 +10630,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10443,7 +10676,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10488,7 +10722,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10533,7 +10768,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10578,7 +10814,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10623,7 +10860,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10668,7 +10906,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10713,7 +10952,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10758,7 +10998,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10803,7 +11044,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10848,7 +11090,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10893,7 +11136,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10938,7 +11182,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -10983,7 +11228,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11028,7 +11274,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11073,7 +11320,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11118,7 +11366,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11163,7 +11412,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11208,7 +11458,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11253,7 +11504,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11298,7 +11550,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11343,7 +11596,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11388,7 +11642,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11433,7 +11688,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11478,7 +11734,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11523,7 +11780,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11568,7 +11826,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11613,7 +11872,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11658,7 +11918,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11703,7 +11964,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11748,7 +12010,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11793,7 +12056,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11838,7 +12102,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11883,7 +12148,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11928,7 +12194,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -11973,7 +12240,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12018,7 +12286,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12063,7 +12332,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12108,7 +12378,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12153,7 +12424,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12198,7 +12470,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12243,7 +12516,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12288,7 +12562,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12333,7 +12608,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12378,7 +12654,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12423,7 +12700,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12468,7 +12746,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12513,7 +12792,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12558,7 +12838,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12603,7 +12884,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12648,7 +12930,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12693,7 +12976,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12738,7 +13022,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12783,7 +13068,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12828,7 +13114,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12873,7 +13160,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12918,7 +13206,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -12963,7 +13252,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13008,7 +13298,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13053,7 +13344,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13098,7 +13390,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13143,7 +13436,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13188,7 +13482,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13233,7 +13528,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13278,7 +13574,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13323,7 +13620,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13368,7 +13666,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13413,7 +13712,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13458,7 +13758,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13503,7 +13804,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13548,7 +13850,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13593,7 +13896,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13638,7 +13942,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13683,7 +13988,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13728,7 +14034,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13773,7 +14080,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13818,7 +14126,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13863,7 +14172,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13908,7 +14218,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13953,7 +14264,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -13998,7 +14310,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14043,7 +14356,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14088,7 +14402,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14133,7 +14448,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14178,7 +14494,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14223,7 +14540,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14268,7 +14586,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14313,7 +14632,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14358,7 +14678,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14403,7 +14724,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14448,7 +14770,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14493,7 +14816,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14538,7 +14862,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14583,7 +14908,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14628,7 +14954,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14673,7 +15000,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14718,7 +15046,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14763,7 +15092,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14808,7 +15138,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14853,7 +15184,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14898,7 +15230,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14943,7 +15276,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -14988,7 +15322,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15033,7 +15368,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15078,7 +15414,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15123,7 +15460,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15168,7 +15506,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15213,7 +15552,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15258,7 +15598,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15303,7 +15644,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15348,7 +15690,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15393,7 +15736,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15438,7 +15782,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15483,7 +15828,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15528,7 +15874,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15573,7 +15920,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15618,7 +15966,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15663,7 +16012,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15708,7 +16058,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15753,7 +16104,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15798,7 +16150,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15843,7 +16196,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15888,7 +16242,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15933,7 +16288,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -15978,7 +16334,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16023,7 +16380,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16068,7 +16426,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16113,7 +16472,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16158,7 +16518,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16203,7 +16564,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16248,7 +16610,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16293,7 +16656,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16338,7 +16702,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16383,7 +16748,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16428,7 +16794,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16473,7 +16840,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16518,7 +16886,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16563,7 +16932,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16608,7 +16978,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16653,7 +17024,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16698,7 +17070,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16743,7 +17116,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16788,7 +17162,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16833,7 +17208,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16878,7 +17254,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16923,7 +17300,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -16968,7 +17346,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17013,7 +17392,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17058,7 +17438,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17103,7 +17484,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17148,7 +17530,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17193,7 +17576,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17238,7 +17622,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17283,7 +17668,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17328,7 +17714,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17373,7 +17760,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17418,7 +17806,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17463,7 +17852,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17508,7 +17898,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17553,7 +17944,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17598,7 +17990,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17643,7 +18036,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17688,7 +18082,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17733,7 +18128,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17778,7 +18174,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17823,7 +18220,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17868,7 +18266,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17913,7 +18312,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -17958,7 +18358,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18003,7 +18404,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18048,7 +18450,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18093,7 +18496,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18138,7 +18542,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18183,7 +18588,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18228,7 +18634,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18273,7 +18680,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18318,7 +18726,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18363,7 +18772,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18408,7 +18818,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18453,7 +18864,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18498,7 +18910,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18543,7 +18956,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18588,7 +19002,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18633,7 +19048,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18678,7 +19094,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18723,7 +19140,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18768,7 +19186,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18813,7 +19232,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18858,7 +19278,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18903,7 +19324,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18948,7 +19370,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -18993,7 +19416,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19038,7 +19462,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19083,7 +19508,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19128,7 +19554,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19173,7 +19600,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19218,7 +19646,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19263,7 +19692,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19308,7 +19738,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19353,7 +19784,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19398,7 +19830,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19443,7 +19876,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19488,7 +19922,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19533,7 +19968,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19578,7 +20014,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19623,7 +20060,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19668,7 +20106,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19713,7 +20152,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19758,7 +20198,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19803,7 +20244,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19848,7 +20290,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19893,7 +20336,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19938,7 +20382,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -19983,7 +20428,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20028,7 +20474,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20073,7 +20520,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20118,7 +20566,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20163,7 +20612,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20208,7 +20658,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20253,7 +20704,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20298,7 +20750,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20343,7 +20796,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20388,7 +20842,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20433,7 +20888,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20478,7 +20934,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20523,7 +20980,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20568,7 +21026,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20613,7 +21072,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20658,7 +21118,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20703,7 +21164,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20748,7 +21210,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20793,7 +21256,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20838,7 +21302,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20883,7 +21348,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20928,7 +21394,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -20973,7 +21440,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21018,7 +21486,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21063,7 +21532,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21108,7 +21578,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21153,7 +21624,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21198,7 +21670,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21243,7 +21716,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21286,7 +21760,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   },
   {
@@ -21329,7 +21804,8 @@
           "usdc_value": 0.0
         }
       },
-      "perp_positions": {}
+      "perp_positions": {},
+      "vault_positions": {}
     }
   }
 ]
