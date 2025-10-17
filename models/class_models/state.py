@@ -11,6 +11,13 @@ class SpotPositionModel(BaseModel):
     balance: float = Field(..., description="The balance of the spot position.")
     usdc_value: float = Field(..., description="The USDC value of the spot position.")
 
+class VaultPositionModel(BaseModel):
+    """
+    Represents a vault position held by a user.
+    """
+    vault: str = Field(..., description="The vault identifier.")
+    balance: float = Field(..., description="The balance of the vault position.")
+    usdc_value: float = Field(..., description="The USDC value of the vault position.")
 
 class PerpPositionModel(BaseModel):
     """
@@ -39,6 +46,9 @@ class StateModel(BaseModel):
     perp_positions: Dict[str, PerpPositionModel] = Field(
         default_factory=dict, description="Perp positions indexed by token symbol."
     )
+    vault_positions: Dict[str, VaultPositionModel] = Field(
+        default_factory=dict, description="Vault positions indexed by vault identifier."
+    )
 
 
 class StateUpdateModel(BaseModel):
@@ -48,5 +58,7 @@ class StateUpdateModel(BaseModel):
 
     time: int = Field(..., description="The timestamp of the update.")
     token: str = Field(..., description="The token symbol for the update.")
+    vault: str = Field("0x0000000000000000000000000000000000000000", description="The vault identifier for the update.")
     is_perp: bool = Field(..., description="Whether the update is for a perp position.")
+    is_vault: bool = Field(False, description="Whether the update is for a vault position.")
     delta: float = Field(..., description="The change in size or balance.")

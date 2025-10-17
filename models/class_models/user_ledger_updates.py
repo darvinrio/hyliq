@@ -24,6 +24,28 @@ class WithdrawTxModel(BaseModel):
     fee: float = Field(..., description="Withdrawal fee")
 
 
+class VaultDepositTxModel(BaseModel):
+    """
+    Deposit to Vault
+    """
+    type: str = "vaultDeposit"
+    vault: str = Field(..., description="Vault address")
+    usdc: float = Field(..., description="USDC amount deposited to vault")
+
+
+class VaultWithdrawTxModel(BaseModel):
+    """
+    Withdraw from Vault
+    """
+    type: str = "vaultWithdraw"
+    vault: str = Field(..., description="Vault address")
+    user: str = Field(..., description="User address")
+    requestedUsd: float = Field(..., description="USDC amount requested for withdrawal")
+    commission: float = Field(..., description="Commission fee")
+    closingCost: float = Field(..., description="Closing cost")
+    basis: float = Field(..., description="Basis amount")
+    netWithdrawnUsd: float = Field(..., description="USDC amount withdrawn from vault")
+
 class InternalTransferTxModel(BaseModel):
     """
     Internal transfer between users
@@ -83,6 +105,8 @@ class AccountActivationGasTxModel(BaseModel):
 LedgerUpdates = Union[
     DepositTxModel,
     WithdrawTxModel,
+    VaultDepositTxModel,
+    VaultWithdrawTxModel,
     InternalTransferTxModel,
     AccountClassTransferTxModel,
     SpotTransferTxModel,

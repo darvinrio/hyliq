@@ -29,6 +29,28 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
             delta=-ledger_entry.delta.usdc,
         )
         state_updates.append(new_state_update)
+        
+    elif type == "vaultDeposit":
+        new_state_update = StateUpdateModel(
+            time=int(time.timestamp() * 1000),
+            token="USDC",
+            is_perp=False,
+            vault=ledger_entry.delta.vault,
+            is_vault=True,
+            delta=ledger_entry.delta.usdc,
+        )
+    
+    
+    elif type == "vaultWithdraw":
+        new_state_update = StateUpdateModel(
+            time=int(time.timestamp() * 1000),
+            token="USDC",
+            is_perp=False,
+            vault=ledger_entry.delta.vault,
+            is_vault=True,
+            delta=-ledger_entry.delta.netWithdrawnUsd,
+        )
+        
 
     elif type == "internalTransfer":
         # perp to perp transfer

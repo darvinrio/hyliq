@@ -14,6 +14,8 @@ from models.class_models.user_ledger_updates import (
     InternalTransferTxModel,
     SpotTransferTxModel,
     TxModel,
+    VaultDepositTxModel,
+    VaultWithdrawTxModel,
     WithdrawTxModel,
 )
 from models.df_models.user_ledger_updates import user_ledger_updates_schema
@@ -152,7 +154,7 @@ def get_user_ledger_updates_pydantic(
 
     if not ledger_updates:
         logger.warning(f"No user ledger updates found for address {address}")
-        return pl.DataFrame(schema=user_ledger_updates_schema)
+        return []
 
     models: List[TxModel] = []
     for update in ledger_updates:
@@ -183,6 +185,37 @@ def get_user_ledger_updates_pydantic(
                         usdc=float(delta.get("usdc", 0.0)),
                         nonce=delta.get("nonce"),
                         fee=float(delta.get("fee", 0.0)),
+                    ),
+                )
+
+                models.append(model)
+                
+            elif type == "vaultDeposit":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=VaultDepositTxModel(
+                        type="vaultDeposit",
+                        vault=delta.get("vault"),
+                        usdc=float(delta.get("usdc", 0.0)),
+                    ),
+                )
+
+                models.append(model)
+                
+            elif type == "vaultWithdraw":
+                model = TxModel(
+                    time=time,
+                    hash=hash,
+                    delta=VaultWithdrawTxModel(
+                        type="vaultWithdraw",
+                        vault=delta.get("vault"),
+                        user=delta.get("user"),
+                        requestedUsd=float(delta.get("requestedUsd")),
+                        commission=float(delta.get("commission")),
+                        closingCost=float(delta.get("closingCost")),
+                        basis=float(delta.get("basis")),
+                        netWithdrawnUsd=float(delta.get("netWithdrawnUsd")),
                     ),
                 )
 

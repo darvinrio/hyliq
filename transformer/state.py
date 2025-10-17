@@ -3,6 +3,7 @@ from models.class_models.state import (
     SpotPositionModel,
     StateModel,
     StateUpdateModel,
+    VaultPositionModel,
 )
 from constants.coin_id import coin_id_map
 
@@ -15,12 +16,14 @@ def init_state(user: str, time: int) -> StateModel:
         perp_usdc=0.0,
         spot_positions={},
         perp_positions={},
+        vault_positions={},
     )
 
 
 def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
     new_spot_positions = state.spot_positions.copy()
     new_perp_positions = state.perp_positions.copy()
+    new_vault_positions = state.vault_positions.copy()
     new_spot_usdc = state.spot_usdc
     new_perp_usdc = state.perp_usdc
 
@@ -33,6 +36,8 @@ def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
     if token == "USDC":
         if update.is_perp:
             new_perp_usdc += update.delta
+        elif update.is_vault:
+            new_perp_usdc += -update.delta
         else:
             new_spot_usdc += update.delta
     else:
@@ -62,6 +67,20 @@ def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
                 new_spot_positions[token] = SpotPositionModel(
                     token=token, balance=update.delta, usdc_value=0.0
                 )
+                
+    if update.is_vault:
+        vault = update.vault
+        if vault in state.vault_positions:
+            old_pos = state.vault_positions[vault]
+            new_vault_positions[vault] = VaultPositionModel(
+                vault=old_pos.vault,
+                balance=old_pos.balance + update.delta,
+                usdc_value=old_pos.usdc_value,
+            )
+        else:
+            new_vault_positions[vault] = VaultPositionModel(
+                vault=vault, balance=update.delta, usdc_value=0.0
+            )
 
     return StateModel(
         user=state.user,
@@ -70,4 +89,5 @@ def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
         perp_usdc=new_perp_usdc,
         spot_positions=new_spot_positions,
         perp_positions=new_perp_positions,
+        vault_positions=new_vault_positions,
     )
