@@ -20,7 +20,7 @@ def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
         leverage = state.perp_positions.get(token).leverage
         usdc_ntl = -twap.executedNtl/leverage
     else:
-        usdc_ntl = twap.executedNtl if side == "b" else -twap.executedNtl
+        usdc_ntl = -twap.executedNtl if side == "b" else twap.executedNtl
     
     state_updates = [
         StateUpdateModel(

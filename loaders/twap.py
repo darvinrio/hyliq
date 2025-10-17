@@ -127,7 +127,8 @@ def get_twap_history_pydantic(address: str, use_cache: bool = True) -> List[TWAP
             status = entry.get("status")
 
             model = TWAPModel(
-                time=int(entry["time"]) * 1000,
+                # time=int(entry["time"]) * 1000,
+                time=int(state.get("timestamp")),
                 coin=state.get("coin"),
                 user=state.get("user"),
                 side=state.get("side").lower(),
