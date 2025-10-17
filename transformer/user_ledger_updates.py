@@ -15,7 +15,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
-            is_perp=False,
+            is_perp=True,
             delta=ledger_entry.delta.usdc
         )
         state_updates.append(new_state_update)
@@ -24,18 +24,19 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
         new_state_update = StateUpdateModel(
             time=int(time.timestamp() * 1000),
             token="USDC",
-            is_perp=False,
+            is_perp=True,
             delta=-ledger_entry.delta.usdc
         )
         state_updates.append(new_state_update)
         
     elif type == "internalTransfer":
+        # perp to perp transfer
         # transfer out
         if ledger_entry.delta.user == state.user:
             new_state_update = StateUpdateModel(
                 time=int(time.timestamp() * 1000),
                 token="USDC",
-                is_perp=False,
+                is_perp=True,
                 delta=-ledger_entry.delta.usdc
             )
             state_updates.append(new_state_update)
@@ -44,7 +45,7 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
             new_state_update = StateUpdateModel(
                 time=int(time.timestamp() * 1000),
                 token="USDC",
-                is_perp=False,
+                is_perp=True,
                 delta=ledger_entry.delta.usdc
             )
             state_updates.append(new_state_update)
