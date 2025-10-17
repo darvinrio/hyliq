@@ -25,12 +25,32 @@ from datetime import datetime
 dnhype_short_eoa = "0x1Da7920cA7f9ee28D481BC439dccfED09F52a237"
 dnhype_spot_eoa = "0xca36897cd0783a558f46407cd663d0f46d2f3386"
 
-eoas = [
+dnpump_short_eoa = "0xCA0Eb15d0efF480c15aC9071db8F47aF9b35ce98"
+dnpump_spot_eoa = "0x975b62b498ed8369f781c2bd2e181ee53612a704"
+
+hbusdt_deposit = "0xD317d8Bf73fCB1758bAA772819163B452D6e2b01"
+hbusdt_onchain = "0x5064d3e2906317905f1d59663d5fa257c15a704a"
+hbusdt_spot_1  = "0x1c020f03305acd09994c1910d440646e4a5f91b0"
+hbusdt_spot_2 = "0xf545003323da8419ce95dd4137ec90577d420ea1"
+hbusdt_withdrawal  = "0x77930A9cd3Db2A9e49f730Db8743bece140260C9"
+
+dnhype_eoas = [
     {"address": dnhype_short_eoa, "label": "DN Hype Short"},
     {"address": dnhype_spot_eoa, "label": "DN Hype Spot"},
 ]
+dnpump_eoas = [
+    {"address": dnpump_short_eoa, "label": "DN Pump Short"},
+    {"address": dnpump_spot_eoa, "label": "DN Pump Spot"},
+]
+hbusdt_eoas = [
+    {"address": hbusdt_deposit, "label": "hbUSDT Deposit"},
+    {"address": hbusdt_onchain, "label": "hbUSDT Onchain"},
+    {"address": hbusdt_spot_1, "label": "hbUSDT Spot 1 "},
+    {"address": hbusdt_spot_2, "label": "hbUSDT Spot 2"},
+    {"address": hbusdt_withdrawal, "label": "hbUSDT Withdrawal"},
+]
 
-for eoa in eoas:
+for eoa in hbusdt_eoas:
     addr = eoa["address"]
     label = eoa["label"]
     logger.info(f"Processing {label} - {addr}")
@@ -55,6 +75,7 @@ for eoa in eoas:
         *leverage_updates,
     ]
 
+    # logger.info(type(updates))
     updates = sorted(updates, key=lambda x: x.time)
     initial_state = init_state(addr.lower(), 0)
     new_state = initial_state.model_copy(deep=True)
@@ -62,6 +83,7 @@ for eoa in eoas:
     out = []
     for update in updates:
         # try:
+        # logger.debug(f"processing {update.name} update at {update.time}")   
         if isinstance(update, TxModel):
             new_state = user_ledger_update(new_state, update)
         elif isinstance(update, TWAPModel):
