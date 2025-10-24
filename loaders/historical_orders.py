@@ -1,3 +1,4 @@
+from typing import List
 import requests
 import json
 import os
@@ -5,6 +6,7 @@ import polars as pl
 from loguru import logger
 from config import cache_dir
 from models.df_models.historical_orders import historical_orders_schema
+from models.class_models.historical_orders import HistoricalOrderModel
 
 
 def get_historical_orders_json(address: str, use_cache: bool = True) -> list:
@@ -102,3 +104,53 @@ def get_historical_orders_dataframe(address: str, use_cache: bool = True) -> pl.
     df = pl.DataFrame(rows, schema_overrides=historical_orders_schema)
     logger.debug(f"Historical orders DataFrame shape: {df.shape}")
     return df
+
+
+def get_historical_orders_pydantic(address: str, use_cache: bool = True) -> List[HistoricalOrderModel]:
+    """
+    Load historical orders into a list of Pydantic models.
+
+    Args:
+        address: User address to fetch historical orders for
+        use_cache: Whether to use cached data if available
+
+    Returns:
+        List of HistoricalOrderModel instances containing historical orders data
+    """
+    historical_orders = get_historical_orders_json(address, use_cache)
+
+    if not historical_orders:
+        logger.warning(f"No historical orders found for address {address}")
+        return []
+
+    models: List[HistoricalOrderModel] = []
+    for order_entry in historical_orders:
+        try:
+            order = order_entry.get("order", {})
+
+            model = HistoricalOrderModel(
+                coin=order.get("coin", ""),
+                side=order.get("side", "").lower(),
+                limitPx=float(order.get("limitPx")),
+                sz=float(order.get("sz")),
+                oid=int(order.get("oid")),
+                timestamp=int(order.get("timestamp")),
+                triggerCondition=order.get("triggerCondition", ""),
+                isTrigger=order.get("isTrigger", False),
+                triggerPx=float(order.get("triggerPx")),
+                isPositionTpsl=order.get("isPositionTpsl", False),
+                reduceOnly=order.get("reduceOnly", False),
+                orderType=order.get("orderType", ""),
+                origSz=float(order.get("origSz")),
+                tif=order.get("tif", ""),
+                cloid=order.get("cloid"),
+                status=order_entry.get("status", ""),
+                statusTimestamp=int(order_entry.get("statusTimestamp")),
+            )
+            models.append(model)
+        except Exception as e:
+            logger.error(f"Error parsing historical order entry for address {address}: {e}")
+            continue
+
+    logger.debug(f"Parsed {len(models)} historical order models for address {address}")
+    return models
