@@ -153473,5 +153473,435 @@
       },
       "vault_positions": {}
     }
+  },
+  {
+    "time": 1761130954785,
+    "update": {
+      "time": 1761130954785,
+      "hash": "0x0782c61013fbba6c08fc042df8c09a0211ed00f5aefed93eab4b7162d2ff9456",
+      "delta": {
+        "type": "vaultWithdraw",
+        "vault": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+        "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+        "requestedUsd": 4000000.0,
+        "commission": 0.0,
+        "closingCost": 0.0,
+        "basis": 4000472.270177,
+        "netWithdrawnUsd": 4000000.0
+      },
+      "name": "vaultWithdrawTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1760349053712,
+      "spot_usdc": -668383.6543982252,
+      "perp_usdc": 18782508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761131019869,
+    "update": {
+      "time": 1761131019869,
+      "hash": "0x7ebf3eabf91ca7278038042df8c3cf0205460091941fc5f92287e9feb8108112",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 4000000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1761131019869,
+      "spot_usdc": 3331616.3456017748,
+      "perp_usdc": 14782508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761131078304,
+    "update": {
+      "time": 1761131078304,
+      "hash": "0x084d36999cbb039f09c6042df8c69d02030a007f37be2271ac15e1ec5bbedd89",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 4000000.0056,
+        "usdcValue": 4000000.0056,
+        "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+        "destination": "0xf545003323da8419ce95dd4137ec90577d420ea1",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1761131078304,
+      "spot_usdc": -668383.659998225,
+      "perp_usdc": 14782508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761155724654,
+    "update": {
+      "time": 1761155724654,
+      "hash": "0x0951a0bb00d09fc40acb042dfd76bb02038600a09bd3be96ad1a4c0dbfd479ae",
+      "delta": {
+        "type": "vaultWithdraw",
+        "vault": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+        "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+        "requestedUsd": 2500000.0,
+        "commission": 0.0,
+        "closingCost": 0.0,
+        "basis": 2498765.23751,
+        "netWithdrawnUsd": 2500000.0
+      },
+      "name": "vaultWithdrawTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1761131078304,
+      "spot_usdc": -668383.659998225,
+      "perp_usdc": 14782508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761155760882,
+    "update": {
+      "time": 1761155760882,
+      "hash": "0xbf321ec253954162c0ab042dfd787a02069700a7ee98603462faca1512991b4d",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 2500000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1761155760882,
+      "spot_usdc": 1831616.340001775,
+      "perp_usdc": 12282508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761155803438,
+    "update": {
+      "time": 1761155803438,
+      "hash": "0x741740a58a86f57d7590042dfd7aa0020ba0008b258a144f17dfebf8498acf68",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 2500000.0,
+        "usdcValue": 2500000.0,
+        "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+        "destination": "0xf545003323da8419ce95dd4137ec90577d420ea1",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x5064d3e2906317905f1d59663d5fa257c15a704a",
+      "time": 1761155803438,
+      "spot_usdc": -668383.659998225,
+      "perp_usdc": 12282508.252204217,
+      "spot_positions": {
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 708328.4524880026,
+          "usdc_value": 0.0
+        },
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 1000.9931908000001,
+          "usdc_value": 0.0
+        },
+        "@180": {
+          "token": "@180",
+          "balance": 499307.4,
+          "usdc_value": 0.0
+        },
+        "USDHL": {
+          "token": "USDHL",
+          "balance": -499007.81563,
+          "usdc_value": 0.0
+        },
+        "LATINA": {
+          "token": "LATINA",
+          "balance": 115568.215,
+          "usdc_value": 0.0
+        },
+        "@195": {
+          "token": "@195",
+          "balance": -115568.21,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": 8007.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        },
+        "FARTCOIN": {
+          "token": "FARTCOIN",
+          "size": 115400.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
   }
 ]

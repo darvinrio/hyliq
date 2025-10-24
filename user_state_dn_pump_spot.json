@@ -21807,5 +21807,579 @@
       "perp_positions": {},
       "vault_positions": {}
     }
+  },
+  {
+    "time": 1760900081005,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900081005,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 250000000.0,
+      "executedSz": 250000000.0,
+      "executedNtl": 975415.6313814,
+      "minutes": 330,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900081005,
+      "status": "finished",
+      "twapId": 1283602
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760900081005000,
+      "spot_usdc": 243838.95381036762,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.2,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750334638.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900081005,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900081005,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 250000000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 330,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900081005,
+      "status": "activated",
+      "twapId": 1283602
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760900081005000,
+      "spot_usdc": 243838.95381036762,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.2,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750334638.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900732116,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900732116,
+      "coin": "@107",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 30000.0,
+      "executedSz": 99.66,
+      "executedNtl": 3819.76848,
+      "minutes": 150,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900732116,
+      "status": "terminated",
+      "twapId": 1283622
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760900732116000,
+      "spot_usdc": 240019.18533036762,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 99.86,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750334638.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900732116,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900732116,
+      "coin": "@107",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 30000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 150,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900732116,
+      "status": "activated",
+      "twapId": 1283622
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760900732116000,
+      "spot_usdc": 240019.18533036762,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 99.86,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750334638.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900763503,
+    "update": {
+      "name": "UserFill",
+      "coin": "@107",
+      "px": 38.347741984,
+      "sz": 99.8,
+      "side": "a",
+      "time": 1760900763503,
+      "startPosition": 99.80259585,
+      "dir": "Sell",
+      "closedPnl": -1.4918462,
+      "hash": "0xa66bfa498b5dc6bea7e5042dccaf7e02015f002f2650e5904a34a59c4a51a0a9",
+      "oid": 206397727062,
+      "crossed": true,
+      "fee": 2.20441227,
+      "tid": 826245349540828,
+      "feeToken": "USDC",
+      "twapId": null
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760900763,
+      "spot_usdc": 243846.2899803708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750334638.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760909101075,
+    "update": {
+      "name": "TWAP",
+      "time": 1760909101075,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 150000000.0,
+      "executedSz": 320270.0,
+      "executedNtl": 1236.25278,
+      "minutes": 510,
+      "reduceOnly": false,
+      "randomize": true,
+      "timestamp": 1760909101075,
+      "status": "terminated",
+      "twapId": 1283810
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760909101075000,
+      "spot_usdc": 242610.0372003708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760909101075,
+    "update": {
+      "name": "TWAP",
+      "time": 1760909101075,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 150000000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 510,
+      "reduceOnly": false,
+      "randomize": true,
+      "timestamp": 1760909101075,
+      "status": "activated",
+      "twapId": 1283810
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760909101075000,
+      "spot_usdc": 242610.0372003708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760912800669,
+    "update": {
+      "time": 1760912800669,
+      "hash": "0x45c720c12dfc491c4740042dcefb5d02017e00a6c8ff67eee98fcc13ecf02306",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 1000000.0,
+        "usdcValue": 1000000.0,
+        "user": "0xca0eb15d0eff480c15ac9071db8f47af9b35ce98",
+        "destination": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1760912800669,
+      "spot_usdc": 1242610.0372003708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 750654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761071149682,
+    "update": {
+      "name": "TWAP",
+      "time": 1761071149682,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 225000000.0,
+      "executedSz": 225000000.0,
+      "executedNtl": 883894.2181977,
+      "minutes": 330,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761071149682,
+      "status": "finished",
+      "twapId": 1288714
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1761071149682000,
+      "spot_usdc": 358715.8190026708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 975654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761071149682,
+    "update": {
+      "name": "TWAP",
+      "time": 1761071149682,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 225000000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 330,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761071149682,
+      "status": "activated",
+      "twapId": 1288714
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1761071149682000,
+      "spot_usdc": 358715.8190026708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 975654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761131852898,
+    "update": {
+      "time": 1761131852898,
+      "hash": "0xdbc1a1236e1e361fdd3b042df8ebe5020a280009091154f17f8a4c762d12100a",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 1000000.0031,
+        "usdcValue": 1000000.0031,
+        "user": "0xca0eb15d0eff480c15ac9071db8f47af9b35ce98",
+        "destination": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1761131852898,
+      "spot_usdc": 1358715.8221026708,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 975654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761132018301,
+    "update": {
+      "name": "TWAP",
+      "time": 1761132018301,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 290000000.0,
+      "executedSz": 290000000.0,
+      "executedNtl": 1085934.9744411,
+      "minutes": 390,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761132018301,
+      "status": "finished",
+      "twapId": 1290570
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1761132018301000,
+      "spot_usdc": 272780.8476615709,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 1265654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761132018301,
+    "update": {
+      "name": "TWAP",
+      "time": 1761132018301,
+      "coin": "@188",
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "side": "b",
+      "sz": 290000000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 390,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761132018301,
+      "status": "activated",
+      "twapId": 1290570
+    },
+    "new_state": {
+      "user": "0x975b62b498ed8369f781c2bd2e181ee53612a704",
+      "time": 1761132018301000,
+      "spot_usdc": 272780.8476615709,
+      "perp_usdc": 0.0,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.060000000000002274,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": -1.0,
+          "usdc_value": 0.0
+        },
+        "PUMP": {
+          "token": "PUMP",
+          "balance": 1265654908.0,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {},
+      "vault_positions": {}
+    }
   }
 ]

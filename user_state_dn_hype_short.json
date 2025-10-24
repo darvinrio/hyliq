@@ -75386,5 +75386,1601 @@
       },
       "vault_positions": {}
     }
+  },
+  {
+    "time": 1760806765431,
+    "update": {
+      "name": "updateLeverage",
+      "time": 1760806765431,
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "asset": 159,
+      "isCross": true,
+      "leverage": 2.0,
+      "block": 767206573,
+      "hash": "0x3a73fc15cfee4b703bed042dbaa4ad02036500fb6ae16a42de3ca7688ee2255a",
+      "error": null
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760806765431,
+      "spot_usdc": 1232226.9117019996,
+      "perp_usdc": 3799168.4442230193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -185056.0,
+          "leverage": 2.0,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760806947583,
+    "update": {
+      "time": 1760806947583,
+      "hash": "0x56071351c9ec44635780042dbaad810204e1003764ef6335f9cfbea488e01e4d",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 100.0,
+        "usdcValue": 100.0,
+        "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "destination": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760806947583,
+      "spot_usdc": 1232126.9117019996,
+      "perp_usdc": 3799168.4442230193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -185056.0,
+          "leverage": 2.0,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760807002280,
+    "update": {
+      "time": 1760807002280,
+      "hash": "0x10b532f6bffa6f38122e042dbab0370201dc00dc5afd8e0ab47dde497efe4922",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 1226916.0,
+        "usdcValue": 1226916.0,
+        "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "destination": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760807002280,
+      "spot_usdc": 5210.911701999605,
+      "perp_usdc": 3799168.4442230193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -185056.0,
+          "leverage": 2.0,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760807032358,
+    "update": {
+      "name": "updateLeverage",
+      "time": 1760807032358,
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "asset": 159,
+      "isCross": true,
+      "leverage": 2.0,
+      "block": 767209929,
+      "hash": "0xf076ef0f80fe20b5f1f0042dbab1c902011200f51bf13f88943f9a623ff1faa0",
+      "error": null
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760807032358,
+      "spot_usdc": 5210.911701999605,
+      "perp_usdc": 3799168.4442230193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -185056.0,
+          "leverage": 2.0,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760807261674,
+    "update": {
+      "name": "TWAP",
+      "time": 1760807261674,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 35000.0,
+      "executedSz": 35000.0,
+      "executedNtl": 1263203.38615,
+      "minutes": 270,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760807261674,
+      "status": "finished",
+      "twapId": 1281571
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760807261674000,
+      "spot_usdc": 5210.911701999605,
+      "perp_usdc": 3167566.7511480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760807261674,
+    "update": {
+      "name": "TWAP",
+      "time": 1760807261674,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 35000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 270,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760807261674,
+      "status": "activated",
+      "twapId": 1281571
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760807261674000,
+      "spot_usdc": 5210.911701999605,
+      "perp_usdc": 3167566.7511480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.510270000668243,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760810559016,
+    "update": {
+      "time": 1760810559016,
+      "hash": "0xd21e2c6758afa9fcd397042dbb5f83020323004cf3a2c8ce75e6d7ba17a383e7",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDT0",
+        "amount": 251686.57092,
+        "usdcValue": 251812.414205,
+        "user": "0x200000000000000000000000000000000000010c",
+        "destination": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760810559016,
+      "spot_usdc": 5210.911701999605,
+      "perp_usdc": 3167566.7511480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 251716.08119000067,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760810781107,
+    "update": {
+      "name": "TWAP",
+      "time": 1760810781107,
+      "coin": "@166",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 251686.57,
+      "executedSz": 251686.57,
+      "executedNtl": 251742.123212,
+      "minutes": 30,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760810781107,
+      "status": "finished",
+      "twapId": 1281666
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760810781107000,
+      "spot_usdc": 256953.0349139996,
+      "perp_usdc": 3167566.7511480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760810781107,
+    "update": {
+      "name": "TWAP",
+      "time": 1760810781107,
+      "coin": "@166",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 251686.57,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 30,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760810781107,
+      "status": "activated",
+      "twapId": 1281666
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760810781107000,
+      "spot_usdc": 256953.0349139996,
+      "perp_usdc": 3167566.7511480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760819603941,
+    "update": {
+      "time": 1760819603941,
+      "hash": "0xfa7fae4e9a84444742e1e9eb5ed842ea43cd9bd75643e14d611eb2c02f5b6ffc",
+      "delta": {
+        "type": "deposit",
+        "usdc": 1047680.56
+      },
+      "name": "depositTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760819603941,
+      "spot_usdc": 256953.0349139996,
+      "perp_usdc": 4215247.3111480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900225033,
+    "update": {
+      "time": 1760900225033,
+      "hash": "0x22906e4955a8357d240a042dcc950f0202b7002ef0ab544fc659199c14ac0f67",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 1000000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760900225033,
+      "spot_usdc": 1256953.0349139995,
+      "perp_usdc": 3215247.3111480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900275769,
+    "update": {
+      "time": 1760900275769,
+      "hash": "0x2c5794ba1d9d1b6d2dd1042dcc9775020210009fb8903a3fd020400cdc90f557",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 1251718.9355,
+        "usdcValue": 1251718.9355,
+        "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "destination": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760900275769,
+      "spot_usdc": 5234.099413999589,
+      "perp_usdc": 3215247.3111480195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -220056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900517795,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900517795,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 30000.0,
+      "executedSz": 30000.0,
+      "executedNtl": 1135402.54162,
+      "minutes": 150,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900517795,
+      "status": "finished",
+      "twapId": 1283612
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760900517795000,
+      "spot_usdc": 5234.099413999589,
+      "perp_usdc": 3101707.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760900517795,
+    "update": {
+      "name": "TWAP",
+      "time": 1760900517795,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 30000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 150,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1760900517795,
+      "status": "activated",
+      "twapId": 1283612
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760900517795000,
+      "spot_usdc": 5234.099413999589,
+      "perp_usdc": 3101707.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966191928,
+    "update": {
+      "time": 1760966191928,
+      "hash": "0xb1f46d0136d6a94fb36e042dd93441020fc800e6d1d9c82155bd1853f5da833a",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 718000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966191928,
+      "spot_usdc": 723234.0994139996,
+      "perp_usdc": 2383707.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.511190000659553,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966410041,
+    "update": {
+      "time": 1760966410041,
+      "hash": "0xa848a2288c0d529aa9c2042dd93f060202fa000e2700716c4c114d7b4b012c85",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDT0",
+        "amount": 51291.703742,
+        "usdcValue": 51301.962082,
+        "user": "0x200000000000000000000000000000000000010c",
+        "destination": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966410041,
+      "spot_usdc": 723234.0994139996,
+      "perp_usdc": 2383707.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 51321.21493200066,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966528499,
+    "update": {
+      "time": 1760966528499,
+      "hash": "0xe483c5a75fd51919310f5a3a8bc6202e51434356320428928ff6f03c52264c52",
+      "delta": {
+        "type": "withdraw",
+        "usdc": 717999.0,
+        "nonce": 1760966255069000,
+        "fee": 1.0
+      },
+      "name": "withdrawTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966528499,
+      "spot_usdc": 723234.0994139996,
+      "perp_usdc": 1665708.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 51321.21493200066,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966528976,
+    "update": {
+      "name": "UserFill",
+      "coin": "@166",
+      "px": 1.0002,
+      "sz": 51291.7,
+      "side": "a",
+      "time": 1760966528976,
+      "startPosition": 51291.703742,
+      "dir": "Sell",
+      "closedPnl": 2e-08,
+      "hash": "0x19820a68291173601afb042dd944aa0204bf004dc4149232bd4ab5bae8154d4a",
+      "oid": 207178045217,
+      "crossed": true,
+      "fee": 4.92498799,
+      "tid": 188904179578366,
+      "feeToken": "USDC",
+      "twapId": null
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966528,
+      "spot_usdc": 774536.0577539996,
+      "perp_usdc": 1665708.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966554862,
+    "update": {
+      "time": 1760966554862,
+      "hash": "0xd0ee570cb497a7b8d268042dd945e2020e1f00f24f9ac68a74b7025f739b81a3",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 50000.0,
+        "toPerp": true
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966554862,
+      "spot_usdc": 724536.0577539996,
+      "perp_usdc": 1715708.0569860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760966709980,
+    "update": {
+      "time": 1760966709980,
+      "hash": "0xe776a7ec529aee01e8f0042dd94d9902042c00d1ed9e0cd38b3f533f119ec7ec",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 719297.03,
+        "toPerp": true
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760966709980,
+      "spot_usdc": 5239.027753999573,
+      "perp_usdc": 2435005.0869860193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760968079911,
+    "update": {
+      "time": 1760968079911,
+      "hash": "0x08057213834757996a6f5e673c80119b41492f2efee76efd9c3ea13397153bdc",
+      "delta": {
+        "type": "deposit",
+        "usdc": 717999.0
+      },
+      "name": "depositTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760968079911,
+      "spot_usdc": 5239.027753999573,
+      "perp_usdc": 3153004.0869860193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760968185364,
+    "update": {
+      "time": 1760968185364,
+      "hash": "0x816b86e2a5aa331b82e5042dd9962802067a00c840ad51ed2534323564ae0d06",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 717500.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760968185364,
+      "spot_usdc": 722739.0277539996,
+      "perp_usdc": 2435504.0869860193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1760968651299,
+    "update": {
+      "time": 1760968651299,
+      "hash": "0x6c06e88a032e07b98cbfde0a49eac6baf4aad9e8701d667cce98c810f94c6bfc",
+      "delta": {
+        "type": "withdraw",
+        "usdc": 717899.0,
+        "nonce": 1760968360099000,
+        "fee": 1.0
+      },
+      "name": "withdrawTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1760968651299,
+      "spot_usdc": 722739.0277539996,
+      "perp_usdc": 1717605.0869860193,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761065386592,
+    "update": {
+      "time": 1761065386592,
+      "hash": "0x05d5834f6973d407576756d1901a2cf853774b0ef37875da5c2303715ad2e9e5",
+      "delta": {
+        "type": "deposit",
+        "usdc": 1999899.2
+      },
+      "name": "depositTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761065386592,
+      "spot_usdc": 722739.0277539996,
+      "perp_usdc": 3717504.2869860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761065454433,
+    "update": {
+      "time": 1761065454433,
+      "hash": "0x44e50e2c01a81cba465e042dec3dae02021c00119cab3b8ce8adb97ec0abf6a4",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 1000000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761065454433,
+      "spot_usdc": 1722739.0277539995,
+      "perp_usdc": 2717504.2869860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761065522018,
+    "update": {
+      "time": 1761065522018,
+      "hash": "0xf06d8ba8a122088ff1e7042dec40eb0203e3008e3c252762943636fb6025e27a",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDC",
+        "amount": 1200000.0,
+        "usdcValue": 1200000.0,
+        "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "destination": "0xca36897cd0783a558f46407cd663d0f46d2f3386",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761065522018,
+      "spot_usdc": 522739.02775399946,
+      "perp_usdc": 2717504.2869860195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -250056.0,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761065649243,
+    "update": {
+      "name": "TWAP",
+      "time": 1761065649243,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 25000.0,
+      "executedSz": 17531.12,
+      "executedNtl": 654386.64079,
+      "minutes": 120,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761065649243,
+      "status": "terminated",
+      "twapId": 1288331
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761065649243000,
+      "spot_usdc": 522739.02775399946,
+      "perp_usdc": 2652065.6229070197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -267587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761065649243,
+    "update": {
+      "name": "TWAP",
+      "time": 1761065649243,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 25000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 120,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761065649243,
+      "status": "activated",
+      "twapId": 1288331
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761065649243000,
+      "spot_usdc": 522739.02775399946,
+      "perp_usdc": 2652065.6229070197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -267587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761070781100,
+    "update": {
+      "time": 1761070781100,
+      "hash": "0xd1ee136c75aa37c5d367042ded3f9702020f005210ad569775b6bebf34ae11b0",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 517500.0,
+        "toPerp": true
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761070781100,
+      "spot_usdc": 5239.027753999457,
+      "perp_usdc": 3169565.6229070197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -267587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761070894753,
+    "update": {
+      "name": "TWAP",
+      "time": 1761070894753,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 25000.0,
+      "executedSz": 25000.0,
+      "executedNtl": 924334.7603,
+      "minutes": 120,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761070894753,
+      "status": "finished",
+      "twapId": 1288690
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761070894753000,
+      "spot_usdc": 5239.027753999457,
+      "perp_usdc": 3077132.1468770197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761070894753,
+    "update": {
+      "name": "TWAP",
+      "time": 1761070894753,
+      "coin": "HYPE",
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "side": "a",
+      "sz": 25000.0,
+      "executedSz": 0.0,
+      "executedNtl": 0.0,
+      "minutes": 120,
+      "reduceOnly": false,
+      "randomize": false,
+      "timestamp": 1761070894753,
+      "status": "activated",
+      "twapId": 1288690
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761070894753000,
+      "spot_usdc": 5239.027753999457,
+      "perp_usdc": 3077132.1468770197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.514932000660338,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761211194025,
+    "update": {
+      "time": 1761211194025,
+      "hash": "0x5696b0db10cdfde35810042e0831b302010500c0abc11cb5fa5f5c2dcfc1d7cd",
+      "delta": {
+        "type": "spotTransfer",
+        "token": "USDT0",
+        "amount": 244204.19083,
+        "usdcValue": 244277.452087,
+        "user": "0x200000000000000000000000000000000000010c",
+        "destination": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+        "fee": 0.0,
+        "nativeTokenFee": 0.0,
+        "feeToken": null
+      },
+      "name": "spotTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761211194025,
+      "spot_usdc": 5239.027753999457,
+      "perp_usdc": 3077132.1468770197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 244233.70576200067,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761211340575,
+    "update": {
+      "name": "UserFill",
+      "coin": "@166",
+      "px": 1.0001059052,
+      "sz": 244204.19,
+      "side": "a",
+      "time": 1761211340575,
+      "startPosition": 244204.19083,
+      "dir": "Sell",
+      "closedPnl": -47.39793068,
+      "hash": "0x8235505dc80d2a8783af042e0838f00201a800436300495925fdfbb087010472",
+      "oid": 210209925089,
+      "crossed": true,
+      "fee": 23.44608499,
+      "tid": 895870926020643,
+      "feeToken": "USDC",
+      "twapId": null
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761211340,
+      "spot_usdc": 249469.08024758226,
+      "perp_usdc": 3077132.1468770197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.515762000664836,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761211379945,
+    "update": {
+      "time": 1761211379945,
+      "hash": "0x223362d50b358d0e23ad042e083ad902040600baa638abe0c5fc0e27ca3966f8",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 350000.0,
+        "toPerp": false
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761211379945,
+      "spot_usdc": 599469.0802475823,
+      "perp_usdc": 2727132.1468770197,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.515762000664836,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761211707732,
+    "update": {
+      "time": 1761211707732,
+      "hash": "0x98b23ad6147643b49a2b042e084b2c0202db00bbaf7962863c7ae628d37a1d9f",
+      "delta": {
+        "type": "accountClassTransfer",
+        "usdc": 594206.61,
+        "toPerp": true
+      },
+      "name": "accountClassTransferTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761211707732,
+      "spot_usdc": 5262.4702475823,
+      "perp_usdc": 3321338.7568770195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.515762000664836,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
+  },
+  {
+    "time": 1761212150074,
+    "update": {
+      "time": 1761212150074,
+      "hash": "0xb21513e3c77867a4145cfc9e7c272fe65a1c52a556d4d03e275502d8d10819c5",
+      "delta": {
+        "type": "withdraw",
+        "usdc": 569999.0,
+        "nonce": 1761211869049000,
+        "fee": 1.0
+      },
+      "name": "withdrawTx"
+    },
+    "new_state": {
+      "user": "0x1da7920ca7f9ee28d481bc439dccfed09f52a237",
+      "time": 1761212150074,
+      "spot_usdc": 5262.4702475823,
+      "perp_usdc": 2751339.7568770195,
+      "spot_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "balance": 0.20499999999919966,
+          "usdc_value": 0.0
+        },
+        "USDT0": {
+          "token": "USDT0",
+          "balance": 29.515762000664836,
+          "usdc_value": 0.0
+        }
+      },
+      "perp_positions": {
+        "HYPE": {
+          "token": "HYPE",
+          "size": -292587.12,
+          "leverage": 10,
+          "entry_price": 0.0,
+          "usdc_value": 0.0
+        }
+      },
+      "vault_positions": {}
+    }
   }
 ]
