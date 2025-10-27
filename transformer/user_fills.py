@@ -16,6 +16,9 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
         else False
     )
     token = coin_id_map.get(fill.coin, fill.coin)
+    fee_token = coin_id_map.get(fill.feeToken, fill.feeToken)
+    fee = fill.fee
+    pnl = fill.closedPnl
     delta = sz
     # ntl = sz * fill.px if side == "b" else -sz * fill.px
     # usdc_ntl = ntl if not is_perp else -ntl
@@ -43,6 +46,18 @@ def user_fill_state_update(state: StateModel, fill: UserFillsModel) -> StateMode
             token="USDC",
             is_perp=is_perp,
             delta=usdc_ntl,
+        ),
+        StateUpdateModel(
+            time=int(time.timestamp() * 1000),
+            token=fee_token,
+            is_perp=is_perp,
+            delta=-fee,
+        ),
+        StateUpdateModel(
+            time=int(time.timestamp() * 1000),
+            token="USDC",
+            is_perp=is_perp,
+            delta=pnl,
         ),
     ]
 
