@@ -28,6 +28,15 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
             is_perp=True,
             delta=-ledger_entry.delta.usdc,
         )
+        fee = ledger_entry.delta.fee
+        if fee and fee > 0:
+            fee_drop = StateUpdateModel(
+                time=int(time.timestamp() * 1000),
+                token="USDC",
+                is_perp=True,
+                delta=-fee,
+            )
+        state_updates.append(fee_drop)
         state_updates.append(new_state_update)
         
     elif type == "vaultDeposit":
@@ -72,6 +81,15 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 delta=ledger_entry.delta.usdc,
             )
             state_updates.append(new_state_update)
+        fee = ledger_entry.delta.fee
+        if fee and fee > 0:
+            fee_drop = StateUpdateModel(
+                time=int(time.timestamp() * 1000),
+                token="USDC",
+                is_perp=True,
+                delta=-fee,
+            )
+            state_updates.append(fee_drop)
 
     elif type == "accountClassTransfer":
         # transfer from spot to perp
@@ -143,6 +161,15 @@ def user_ledger_update(state: StateModel, ledger_entry: TxModel) -> StateModel:
                 delta=-ledger_entry.delta.fee,
             )
             state_updates.append(fee_drop)
+        if ledger_entry.delta.nativeTokenFee: 
+            native_fee_token = "HYPE"
+            native_fee_drop = StateUpdateModel(
+                time=int(time.timestamp() * 1000),
+                token=native_fee_token,
+                is_perp=False,
+                delta=-ledger_entry.delta.nativeTokenFee,
+            )
+            state_updates.append(native_fee_drop)
 
     elif type == "cStakingTransfer":
         delta_token = ledger_entry.delta.token
