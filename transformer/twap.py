@@ -2,6 +2,7 @@ from loguru import logger
 from models.class_models.twap import TWAPModel
 from models.class_models.state import StateModel, StateUpdateModel
 from transformer.state import state_update
+from constants.coin_id import coin_id_map
 
 
 def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
@@ -16,14 +17,15 @@ def twap_state_update(state: StateModel, twap: TWAPModel) -> StateModel:
     delta = twap.executedSz if side == "b" else -twap.executedSz
     # ntl = twap.executedNtl if side == "b" else -twap.executedNtl
     # usdc_ntl =  ntl if not is_perp else -ntl
+    token_std = coin_id_map.get(token, token)
 
     usdc_ntl = 0
     if is_perp:
         leverage = 10
         current_position = 0
         try:
-            leverage = state.perp_positions.get(token).leverage
-            current_position = state.perp_positions.get(token).size
+            leverage = state.perp_positions.get(token_std).leverage
+            current_position = state.perp_positions.get(token_std).size
         except: 
             pass
         # if current position and delta have opposite signs we're reducing exposure -> flip executed notional sign

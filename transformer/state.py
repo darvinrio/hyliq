@@ -43,12 +43,13 @@ def state_update(state: StateModel, update: StateUpdateModel) -> StateModel:
                 new_perp_positions[token] = PerpPositionModel(
                     token=old_pos.token,
                     size=old_pos.size + update.delta,
+                    leverage=old_pos.leverage,
                     entry_price=old_pos.entry_price,
                     usdc_value=old_pos.usdc_value,
                 )
             else:
                 new_perp_positions[token] = PerpPositionModel(
-                    token=token, size=update.delta, entry_price=0.0, usdc_value=0.0
+                    token=token, size=update.delta, leverage= 10, entry_price=0.0, usdc_value=0.0
                 )
         else:
             if token in state.spot_positions:
