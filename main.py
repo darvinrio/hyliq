@@ -10,6 +10,7 @@ from loaders.explorer import get_user_explorer_pydantic
 from loaders.historical_orders import get_historical_orders_pydantic
 from loaders.twap import get_twap_history_pydantic
 from loaders.user_fills import get_user_fills_pydantic
+from loaders.user_fills_extended import get_user_fills_extended_pydantic
 from loaders.user_funding import get_user_funding_pydantic
 from loaders.user_ledger_updates import get_user_ledger_updates_pydantic
 from models.class_models.explorer import UpdateLeverageModel
@@ -37,10 +38,18 @@ hbusdt_spot_1  = "0x1c020f03305acd09994c1910d440646e4a5f91b0"
 hbusdt_spot_2 = "0xf545003323da8419ce95dd4137ec90577d420ea1"
 hbusdt_withdrawal  = "0x77930A9cd3Db2A9e49f730Db8743bece140260C9"
 
+hbusdc_deposit = "0xBBB2f471a72D4ea4B2C92B65859A503526BB3622"
+hbhype_deposit = "0x37B9De93bbe9747c7fc48913417A9AADe1E59FA2"
+
+hbusdc_eoas = [
+    {"address": hbusdc_deposit, "label": "hbUSDC Deposit"},
+]
+hbhype_eoas = [
+    {"address": hbhype_deposit, "label": "hbHype Deposit"},
+]
 dnhype_eoas = [
-    {"address": dnhype_short_eoa, "label": "DN Hype Short"},
-    # {"address": dnhype_spot_eoa, "label": "DN Hype Spot"},
-    {"address": "0x364F7Fd945B8c76C3C77d6ac253f1fEa3B65E00d", "label": "DN Hype Spot"},
+    # {"address": dnhype_short_eoa, "label": "DN Hype Short"},
+    {"address": dnhype_spot_eoa, "label": "DN Hype Spot"},
 ]
 dnpump_eoas = [
     {"address": dnpump_short_eoa, "label": "DN Pump Short"},
@@ -54,15 +63,16 @@ hbusdt_eoas = [
     {"address": hbusdt_withdrawal, "label": "hbUSDT Withdrawal"},
 ]
 
-for eoa in dnhype_eoas:
+for eoa in hbhype_eoas:
     addr = eoa["address"]
     label = eoa["label"]
     logger.info(f"Processing {label} - {addr}")
     filename_uid = f"{label.replace(' ','_').lower()}"
 
-    historical_orders = get_historical_orders_pydantic(addr, use_cache=not REFRESH)
+    # historical_orders = get_historical_orders_pydantic(addr, use_cache=not REFRESH)
     twaps = get_twap_history_pydantic(addr, use_cache=not REFRESH)
     user_fills = get_user_fills_pydantic(addr, use_cache=not REFRESH)
+    user_fills_extended = get_user_fills_extended_pydantic(addr, use_cache=not REFRESH)
     user_funding = get_user_funding_pydantic(addr, use_cache=not REFRESH)
     user_ledger_updates = get_user_ledger_updates_pydantic(addr, use_cache=not REFRESH)
     leverage_updates = get_user_explorer_pydantic(addr, use_cache=not REFRESH)
