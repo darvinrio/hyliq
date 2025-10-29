@@ -9,6 +9,7 @@ class OrderStatus(str, Enum):
     FILLED = "filled"
     CANCELED = "canceled"
     TERMINATED = "terminated"
+    REJECTED = "minTradeNtlRejected"
 
 
 class OrderType(str, Enum):
