@@ -66,12 +66,12 @@ def get_user_explorer_json(
             if filtered:
                 filtered_data = user_details.copy()
                 # Filter out transactions based on global FILTERED_TX_TYPES list
-                if "txs" in filtered_data:
-                    filtered_data["txs"] = [
-                        tx
-                        for tx in filtered_data["txs"]
-                        if tx["action"].get("type") not in FILTERED_TX_TYPES
-                    ]
+                # if "txs" in filtered_data:
+                #     filtered_data["txs"] = [
+                #         tx
+                #         for tx in filtered_data["txs"]
+                #         if tx["action"].get("type") not in FILTERED_TX_TYPES
+                #     ]
 
                 # Cache the filtered data
                 with open(cache_path, "w") as f:
